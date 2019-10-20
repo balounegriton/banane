@@ -1,0 +1,76 @@
+import React, { Component } from 'react';
+import '../App.css';
+import './Landing.css';
+import logo from "../images/logo.png"
+import loop from "../video/loop.mp4";
+import { withGetScreen } from 'react-getscreen'
+
+
+class Landing extends Component {
+  constructor() {
+    super();
+    this.state = {
+    };
+  }
+
+
+
+  componentDidMount() {
+    if (!this.props.isMobile() && this.refs.vidRef !== undefined) {
+      this.refs.vidRef.pause();
+    }
+  }
+
+
+
+  playVideo = () => {
+    this.refs.vidRef.play();
+    document.getElementById("video1").className = "mouseHover";
+  };
+
+  pauseVideo = () => {
+    this.refs.vidRef.pause();
+    document.getElementById("video1").className = "mouseNotHover";
+  };
+
+  render() {
+
+    if (this.props.isMobile() || this.props.isTablet()) {
+      return (
+
+        <div className="landing">
+          mobile ou tablette
+            </div>
+      )
+    }
+
+
+    else {
+
+      return (
+
+        <div className="landing">
+          <img className="logoLanding" id="logo2" src={logo} alt="logo"
+            onMouseEnter={this.playVideo}
+            onMouseLeave={this.pauseVideo} />
+          <div className="colorBackground">
+            <video
+              id="video1"
+              className="mouseNotHover"
+              ref="vidRef"
+              src={loop}
+              type="video/mp4"
+              autoPlay
+              loop
+              muted
+            />
+          </div>
+        </div>
+      )
+
+    }
+  }
+}
+
+export default withGetScreen(Landing);
+

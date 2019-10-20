@@ -1,22 +1,62 @@
-.App {
-  text-align: center;
+.nav {
+    position: fixed;
+    display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
+.landing {
+    height: 100vh;
+    background: yellow;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.demo {
+    height: 70vh;
+    background: orange;
 }
 
-.App-link {
-  color: #09d3ac;
+.service {
+    height: 70vh;
+    background: yellow;
+}
+
+.client {
+    height: 70vh;
+    background: orange;
+}
+
+.contact {
+    height: 70vh;
+    background: yellow;
+}
+
+.logo {
+
+    width: 70px;
+}
+
+
+.language-container {
+    position: fixed;
+    display: flex;
+    right: 0;
+}
+
+.language-texte-selected {
+    color: black;
+    font-size: 20px;
+    text-decoration: underline;
+    cursor: default;
+}
+
+.language-slash {
+    color: black;
+    font-size: 20px;
+    cursor: default;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.language-texte {
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
 }

@@ -1,26 +1,48 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import Navbar from './component/Navbar.js'
+import Landing from './component/Landing.js'
+import Demo from './component/Demo.js'
+import Service from './component/Service.js'
+import Client from './component/Client.js'
+import Contact from './component/Contact.js'
+class App extends Component {
+  constructor() {
+    super();
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    this.state = {
+      languageFr: true
+    };
+  }
+
+  goFr = () => {
+    this.setState({ languageFr: true })
+  }
+  goAn = () => {
+    this.setState({ languageFr: false})
+  
+  }
+
+ 
+
+
+
+
+
+  render() {
+
+    return (
+      <div className="App">
+        <Navbar languageFr={this.state.languageFr} goAn={this.goAn} goFr={this.goFr} />
+        <Landing />
+        <Demo />
+        <Service />
+        <Client />
+        <Contact />
+      </div>
+    )
+  }
 }
+
 
 export default App;
