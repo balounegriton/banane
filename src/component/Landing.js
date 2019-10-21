@@ -20,7 +20,11 @@ class Landing extends Component {
       this.refs.vidRef.pause();
     }
   }
-
+  componentDidUpdate() {
+    if (!this.props.isMobile() && this.refs.vidRef !== undefined) {
+      this.refs.vidRef.pause();
+    }
+  }
 
 
   playVideo = () => {
@@ -38,7 +42,7 @@ class Landing extends Component {
     if (this.props.isMobile() || this.props.isTablet()) {
       return (
 
-        <div className="landing">
+        <div className="">
           mobile ou tablette
             </div>
       )
@@ -49,7 +53,7 @@ class Landing extends Component {
 
       return (
 
-        <div className="landing">
+        <div className="landingContainer">
           <img className="logoLanding" id="logo2" src={logo} alt="logo"
             onMouseEnter={this.playVideo}
             onMouseLeave={this.pauseVideo} />

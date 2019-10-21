@@ -1,12 +1,14 @@
 .mouseHover {
   filter: none;
-  width: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
   mix-blend-mode: normal;
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
   -ms-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
+  
 }
 
 
@@ -14,7 +16,8 @@
 
 .mouseNotHover {
   opacity: .1;
-  width: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
   filter: grayscale(100%) contrast(200%);
   ;
   mix-blend-mode: luminosity;
@@ -23,6 +26,7 @@
   -ms-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
+  
 
 }
 
@@ -30,9 +34,9 @@
 .logoLanding {
 
   position: absolute;
-  width: 20vw;
-  margin-top: 30vh;
-  margin-left: 35vw;
+  width: 5vw;
+  margin-top: 40vh;
+  margin-left: 45%;
   z-index: 1000;
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
@@ -48,6 +52,14 @@
   -ms-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
-  width: 25vw;
+  width: 7vw;
+  opacity: 0.3;
+  filter: grayscale(100%);
+  
 
+}
+
+.landingContainer{
+  overflow-x:hidden;
+  overflow-y:hidden;
 }

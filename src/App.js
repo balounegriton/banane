@@ -3,9 +3,9 @@ import './App.css';
 import Navbar from './component/Navbar.js'
 import Landing from './component/Landing.js'
 import Demo from './component/Demo.js'
-import Service from './component/Service.js'
 import Client from './component/Client.js'
 import Contact from './component/Contact.js'
+import Message from './component/Message.js'
 class App extends Component {
   constructor() {
     super();
@@ -35,8 +35,8 @@ class App extends Component {
       <div className="App">
         <Navbar languageFr={this.state.languageFr} goAn={this.goAn} goFr={this.goFr} />
         <Landing />
+        <Message languageFr={this.state.languageFr}/>
         <Demo />
-        <Service />
         <Client />
         <Contact />
       </div>

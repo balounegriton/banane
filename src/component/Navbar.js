@@ -9,7 +9,7 @@ class Navbar extends Component {
     super();
 
     this.state = {
-      francais: true
+    
     };
   }
 
@@ -24,7 +24,7 @@ class Navbar extends Component {
 
     return (
       <div className="nav">
-        <img className="logo" id="logo" src={logo} alt="logo" />
+        {/* <img className="logo" id="logo" src={logo} alt="logo" /> */}
         <div className="language-container">
           {this.props.languageFr && <div id="fr" className="language-texte-selected" >FR</div>}
           {!this.props.languageFr && <div id="fr" className="language-texte" onClick={this.props.goFr}>FR</div>}

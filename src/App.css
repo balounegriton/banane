@@ -1,31 +1,45 @@
+ /*///////////// FONT pour toute le document/////// */
+ @font-face {
+    font-family: gotBold;
+    src: url(Gotham-Bold.otf);
+  }
+
+  @font-face {
+    font-family: gotLight;
+    src: url(Gotham-Light.otf);
+  }
+
+  body{
+    font-family:gotLight;
+    background: rgb(245, 218, 63)
+  }
+
 .nav {
     position: fixed;
     display: flex;
+    z-index: 2000000;
 }
 
-.landing {
-    height: 100vh;
-    background: yellow;
-}
+
 
 .demo {
-    height: 70vh;
-    background: orange;
+  margin-top: 10vh;;
+
 }
 
 .service {
     height: 70vh;
-    background: yellow;
+  
 }
 
 .client {
     height: 70vh;
-    background: orange;
+
 }
 
 .contact {
     height: 70vh;
-    background: yellow;
+  
 }
 
 .logo {
@@ -59,4 +73,33 @@
     color: black;
     font-size: 20px;
     cursor: pointer;
+}
+
+.demoPlayer{
+    display: flex;
+    justify-content: space-around;
+
+ 
+}
+
+.texteContainer{
+    display: flex;
+
+}
+
+.texteService{
+    padding-right: 50px;;
+    font-size: 60px;
+    cursor: cell;
+}
+
+.boxSize{
+    width: 200px;
+ 
+    background: rgb(245, 218, 40)
+}
+
+.message{
+    font-family: gotBold;
+    font-size: 100px;
 }
