@@ -6,13 +6,15 @@ import Demo from './component/Demo.js'
 import Client from './component/Client.js'
 import Contact from './component/Contact.js'
 import Message from './component/Message.js'
+import scrollToComponent from 'react-scroll-to-component';
 class App extends Component {
   constructor() {
     super();
+    this.myRef = React.createRef()
+    this.state = {scrollTop: 0,
+      languageFr: true}
 
-    this.state = {
-      languageFr: true
-    };
+
   }
 
   goFr = () => {
@@ -23,21 +25,24 @@ class App extends Component {
   
   }
 
- 
+  scrollToDemo = () => {
+    scrollToComponent(this.Message, { offset: 0, align: 'top', duration: 700});
+  
+  }
 
 
 
 
 
   render() {
-
+    
     return (
-      <div className="App">
+      <div className="App"  >
         <Navbar languageFr={this.state.languageFr} goAn={this.goAn} goFr={this.goFr} />
-        <Landing />
-        <Message languageFr={this.state.languageFr}/>
-        <Demo />
-        <Client />
+        <Landing scrollToDemo={this.scrollToDemo}  />
+        <Message languageFr={this.state.languageFr}  ref={(section) => { this.Message = section; }}/>
+        <Demo languageFr={this.state.languageFr}/>
+        {/* <Client /> */}
         <Contact />
       </div>
     )

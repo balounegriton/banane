@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
 import Service from './Service.js'
+import ServiceAnglais from './ServiceAnglais.js'
 
 
 
@@ -28,12 +29,16 @@ class Demo extends Component {
     return (
       <div className="demo">
   
-        
+
         
     
         <div className="demoPlayer">
-        <Service />
+        {this.props.languageFr && <Service />}
+        {!this.props.languageFr && <ServiceAnglais />}
+   
+        
           <iframe src="https://player.vimeo.com/video/349594476"
+          className="demoDiv"
             title="demo"
             width="640"
             height="360"
@@ -42,11 +47,12 @@ class Demo extends Component {
             allowFullScreen>
 
           </iframe>
-
+    
 
         </div>
 
       </div>
+      
     )
   }
 }

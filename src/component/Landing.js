@@ -56,7 +56,8 @@ class Landing extends Component {
         <div className="landingContainer">
           <img className="logoLanding" id="logo2" src={logo} alt="logo"
             onMouseEnter={this.playVideo}
-            onMouseLeave={this.pauseVideo} />
+            onMouseLeave={this.pauseVideo}
+            onClick={this.props.scrollToDemo} />
           <div className="colorBackground">
             <video
               id="video1"

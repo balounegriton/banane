@@ -9,7 +9,7 @@ class Contact extends Component {
     super();
 
     this.state = {
-    
+
     };
   }
 
@@ -26,7 +26,28 @@ class Contact extends Component {
   render() {
     return (
       <div className="contact">
-    Contac
+
+
+        <div>
+
+          <input type="text" id="lname" name="lastname" placeholder="NAME" />
+          <input type="text" id="lname" name="lastname" placeholder="EMAIL" />
+          <form>
+            <textarea placeholder="MESSAGE"></textarea>
+          </form>
+        </div>
+
+        <div>
+
+          <input type="text" id="lname" name="lastname" placeholder="NAME" />
+          <input type="text" id="lname" name="lastname" placeholder="EMAIL" />
+          <form>
+            <textarea placeholder="MESSAGE"></textarea>
+          </form>
+        </div>
+
+
+
       </div>
     )
   }

@@ -21,8 +21,10 @@ class Landing extends Component {
 
     return (
       <div>
+
         {this.props.languageFr && <div className="message">
-        MOI JDIT QU'ON DIT QUELQUE CHOSE DE BIG ICI MAIS JSAI PAS TROP KOI HIHI
+        C'EST SIMPLE, ON REND LA VIE SIMPLE. SIMPLE COMME MANGER UNE BANANE
+       
         </div>}
      
 {!this.props.languageFr && <div className="message">

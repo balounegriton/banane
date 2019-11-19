@@ -41,15 +41,13 @@ class Service extends Component {
 
         <div className="texteContainer">
 
-        <p className="texteService" > SERVICE:
-</p>
 
           {/* /////////////  texte braker ////////////////////////////////  */}
 
 
           <ReactHover options={optionsCursorTrueWithMargin}>
             <ReactHover.Trigger type='trigger'>
-              <p className="texteService" > VIDEO.
+              <p className="texteService" > MOVIE
 </p>
             </ReactHover.Trigger>
             <ReactHover.Hover type='hover'>
@@ -64,7 +62,7 @@ class Service extends Component {
 
           <ReactHover options={optionsCursorTrueWithMargin}>
             <ReactHover.Trigger type='trigger'>
-              <p className="texteService" > PHOTO.
+              <p className="texteService" > PICTURE
 </p>
             </ReactHover.Trigger>
             <ReactHover.Hover type='hover'>
@@ -77,7 +75,7 @@ class Service extends Component {
           {/* /////////////  texte braker ////////////////////////////////  */}
           <ReactHover options={optionsCursorTrueWithMargin}>
             <ReactHover.Trigger type='trigger'>
-              <p className="texteService" > POSTPROD.
+              <p className="texteService" > POSTPROD
 </p>
             </ReactHover.Trigger>
             <ReactHover.Hover type='hover'>
@@ -95,10 +93,11 @@ class Service extends Component {
 
 
           {/* /////////////  texte braker ////////////////////////////////  */}
-   
+
+
           <ReactHover options={optionsCursorTrueWithMargin}>
             <ReactHover.Trigger type='trigger'>
-              <p className="texteService" > TÉLÉ.
+              <p className="texteService" > TV
 </p>
             </ReactHover.Trigger>
             <ReactHover.Hover type='hover'>
@@ -113,7 +112,7 @@ class Service extends Component {
 
           <ReactHover options={optionsCursorTrueWithMargin}>
             <ReactHover.Trigger type='trigger'>
-              <p className="texteService" > INTERNET.
+              <p className="texteService" > WEB
 </p>
             </ReactHover.Trigger>
             <ReactHover.Hover type='hover'>
@@ -129,7 +128,7 @@ class Service extends Component {
 
         <ReactHover options={optionsCursorTrueWithMargin}>
             <ReactHover.Trigger type='trigger'>
-              <p className="texteService" > CORPO.
+              <p className="texteService" > CORPO
 </p>
             </ReactHover.Trigger>
             <ReactHover.Hover type='hover'>

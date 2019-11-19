@@ -2,7 +2,15 @@ import React, { Component } from 'react';
 import '../App.css';
 
 
+// exemple hook
 
+// const Client = (props)=>{
+// const [isClick, setIsCLick]  = useState(false)
+//   return (
+//     <div onClick={()=> setIsCLick(!isClick)}>{isClick}</div>
+//   )
+
+// }
 
 class Client extends Component {
   constructor() {
@@ -26,7 +34,7 @@ class Client extends Component {
   render() {
     return (
       <div className="client">
-    Client
+client
       </div>
     )
   }

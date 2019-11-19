@@ -7,19 +7,48 @@
   @font-face {
     font-family: gotLight;
     src: url(Gotham-Light.otf);
-  }
+  } 
+  input[type=text] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+
+textarea{
+    background: transparent;
+    border: 1px solid #000000;
+    resize: none;
+    width: 250px;
+    height: 255px;
+    
+   
+}
 
   body{
     font-family:gotLight;
-    background: rgb(245, 218, 63)
+    background: rgb(249, 229, 176)
   }
 
 .nav {
+    opacity: 1;
     position: fixed;
     display: flex;
     z-index: 2000000;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    
 }
-
+.navHid{
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    opacity: 0;
+}
 
 
 .demo {
@@ -38,7 +67,10 @@
 }
 
 .contact {
-    height: 70vh;
+   margin-top: 12vh;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 80px;
   
 }
 
@@ -56,14 +88,15 @@
 
 .language-texte-selected {
     color: black;
-    font-size: 20px;
+    font-size: 30px;
     text-decoration: underline;
     cursor: default;
+    
 }
 
 .language-slash {
     color: black;
-    font-size: 20px;
+    font-size: 30px;
     cursor: default;
     margin-left: 5px;
     margin-right: 5px;
@@ -71,35 +104,50 @@
 
 .language-texte {
     color: black;
-    font-size: 20px;
+    font-size: 30px;
     cursor: pointer;
 }
 
 .demoPlayer{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+   
 
  
 }
 
 .texteContainer{
-    display: flex;
 
+margin-left: 10px;
 }
 
 .texteService{
-    padding-right: 50px;;
-    font-size: 60px;
+    font-size: 80px;
     cursor: cell;
+    margin: 0;
 }
 
+.demoDiv{
+    margin-right: 5vw;
+    margin-top: 170px;
+}
 .boxSize{
     width: 200px;
- 
-    background: rgb(245, 218, 40)
+    background: rgb(245, 221, 161)
 }
 
 .message{
     font-family: gotBold;
     font-size: 100px;
+    margin-left: 10px;
+}
+
+.message2{
+    font-family: gotBold;
+    font-size: 20vw;
+    position: absolute;
+    z-index: -40000000;
+    color:  rgb(245, 221, 161);
+margin-top: 100px;
+
 }

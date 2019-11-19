@@ -18,7 +18,7 @@
   opacity: .1;
   min-width: 100vw;
   min-height: 100vh;
-  filter: grayscale(100%) contrast(200%);
+  filter: grayscale(100%) contrast(100%);
   ;
   mix-blend-mode: luminosity;
   -webkit-transition: all 1s ease-in-out;
@@ -35,8 +35,7 @@
 
   position: absolute;
   width: 5vw;
-  margin-top: 40vh;
-  margin-left: 45%;
+  align-self: center;
   z-index: 1000;
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
@@ -56,10 +55,15 @@
   opacity: 0.3;
   filter: grayscale(100%);
   
+  
 
 }
 
 .landingContainer{
   overflow-x:hidden;
   overflow-y:hidden;
+  display: flex;
+  justify-content: center;
+
+
 }
