@@ -23,8 +23,6 @@ class Demo extends Component {
 
 
 
-
-
   render() {
     return (
       <div className="demo">
@@ -36,7 +34,9 @@ class Demo extends Component {
         {this.props.languageFr && <Service />}
         {!this.props.languageFr && <ServiceAnglais />}
    
-        
+        <div className="aloalo"  >
+allo
+        </div>
           <iframe src="https://player.vimeo.com/video/349594476"
           className="demoDiv"
             title="demo"

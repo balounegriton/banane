@@ -67,11 +67,11 @@ textarea{
 }
 
 .contact {
-   margin-top: 12vh;
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 80px;
-  
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+
 }
 
 .logo {
@@ -127,9 +127,16 @@ margin-left: 10px;
     margin: 0;
 }
 
+
+ 
+ 
+
 .demoDiv{
-    margin-right: 5vw;
-    margin-top: 170px;
+    filter: grayscale(100%) contrast(100%);
+    mix-blend-mode: luminosity;
+    opacity: .9;
+    width: 50vw;
+  margin-right: 100px;
 }
 .boxSize{
     width: 200px;
@@ -151,3 +158,35 @@ margin-left: 10px;
 margin-top: 100px;
 
 }
+
+.serviceDiv{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.video1{
+    filter: grayscale(100%) contrast(100%);
+    mix-blend-mode: luminosity;
+    opacity: .2;
+    width: 50vw;
+  margin-right: 100px;
+}
+
+.emailAdresse{
+    font-size: 80px;
+    margin-top: 50vh;
+}
+
+.emptydiv {
+    width: 100vw;
+    height: 100vh;
+}
+
+.pageBackground {
+
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+}
+

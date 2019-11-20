@@ -18,35 +18,21 @@ class Contact extends Component {
 
 
   }
-
+  email = () => {
+    console.log("allosasxas")
+  };
 
 
 
 
   render() {
     return (
+
       <div className="contact">
+ 
 
 
-        <div>
-
-          <input type="text" id="lname" name="lastname" placeholder="NAME" />
-          <input type="text" id="lname" name="lastname" placeholder="EMAIL" />
-          <form>
-            <textarea placeholder="MESSAGE"></textarea>
-          </form>
-        </div>
-
-        <div>
-
-          <input type="text" id="lname" name="lastname" placeholder="NAME" />
-          <input type="text" id="lname" name="lastname" placeholder="EMAIL" />
-          <form>
-            <textarea placeholder="MESSAGE"></textarea>
-          </form>
-        </div>
-
-
+          <div className="emailAdresse" onClick={this.email}>info@laBanane.ca</div>
 
       </div>
     )
