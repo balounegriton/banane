@@ -168,43 +168,19 @@ class Service extends Component {
 
 
 
-          {/* /////////////  texte braker ////////////////////////////////  */}
-
-          <ReactHover options={optionsCursorTrueWithMargin}>
-            <ReactHover.Trigger type='trigger'>
-              <p className="texteService" onMouseEnter={this.toggleHover5} > DEMO.
-</p>
-            </ReactHover.Trigger>
-            <ReactHover.Hover type='hover'>
-              <div className="boxSize">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis sem tempus, imperdiet nisl et, lacinia diam. Maecenas condimentum odio eu mollis commodo. Curabitur eget sapien mattis, molestie eros ac, mattis turpis. Praesent eget felis non dolor vehicula facilisis. Sed tristique dignissim fringilla. Aliquam velit leo, lacinia imperdiet sem et, feugiat imperdiet ipsum. Sed aliquet ante ut augue feugiat auctor. Mauris non justo quis sem convallis aliquet. Q
-              </div>
-            </ReactHover.Hover>
-          </ReactHover>
-
-
-
+          {/* /////////////  ANIMATION ////////////////////////////////  */}
 
 
         </div>
 
         {this.state.Anim1 && <Anim1 />
         }
-        {this.state.Anim2 && <div><Anim2 /><div>allo</div></div>
+        {this.state.Anim2 && <div><Anim2 /></div>
         }
-          {this.state.Anim3 && <div><Anim3 /><div>allo</div></div>
+          {this.state.Anim3 && <div><Anim3 /></div>
         }
 
-        {this.state.demo && <iframe src="https://player.vimeo.com/video/349594476"
-          className="demoDiv"
-          title="demo"
-
-          frameBorder="0"
-          allow="autoplay; fullscreen"
-          allowFullScreen>
-
-        </iframe>}
-
+       
       </div>
 
 

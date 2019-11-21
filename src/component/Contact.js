@@ -32,7 +32,11 @@ class Contact extends Component {
  
 
 
-          <div className="emailAdresse" onClick={this.email}>info@laBanane.ca</div>
+          <div className="emailAdresse" onClick={this.email}>info@la-banane.ca
+          <div className="phoneNum">514-712-0366</div>
+          
+          </div>
+     
 
       </div>
     )

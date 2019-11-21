@@ -190,3 +190,8 @@ margin-top: 100px;
     top: 0;
 }
 
+.phoneNum{
+    display: flex;
+    justify-content: center;
+  font-size: 15px;
+}

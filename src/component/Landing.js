@@ -3,6 +3,7 @@ import '../App.css';
 import './Landing.css';
 import logo from "../images/logo.png"
 import loop from "../video/loop.mp4";
+import Anim1 from "./Animation/Amin1.js";
 import { withGetScreen } from 'react-getscreen'
 
 
@@ -54,10 +55,17 @@ class Landing extends Component {
       return (
 
         <div className="landingContainer">
-          <img className="logoLanding" id="logo2" src={logo} alt="logo"
-            onMouseEnter={this.playVideo}
-            onMouseLeave={this.pauseVideo}
-            onClick={this.props.scrollToDemo} />
+          {/* <img className="logoLanding" id="logo2" src={logo} alt="logo"
+           
+            onClick={this.props.scrollToDemo} /> */}
+
+          <div className="logoLanding"
+           onMouseEnter={this.playVideo}
+           onMouseLeave={this.pauseVideo}>
+          <Anim1  />
+            </div>
+
+
           <div className="colorBackground">
             <video
               id="video1"
