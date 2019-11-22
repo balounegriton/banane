@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://balounegriton.github.io/banane/",
+  
   "dependencies": {
     "bodymovin": "^4.13.0",
     "react": "^16.10.2",
