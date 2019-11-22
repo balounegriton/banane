@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactBodymovin from 'react-bodymovin'
-import animation3 from './dataa.json'
+import animation3 from './anim3.json'
  
 const App3 = () => {
   const bodymovinOptions3 = {

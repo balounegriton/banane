@@ -8,7 +8,6 @@ import Client from './component/Client.js'
 import Service from './component/Service.js'
 import Contact from './component/Contact.js'
 import Message from './component/Message.js'
-import scrollToComponent from 'react-scroll-to-component';
 class App extends Component {
   constructor() {
     super();
@@ -27,10 +26,6 @@ class App extends Component {
   
   }
 
-  scrollToDemo = () => {
-    scrollToComponent(this.Message, { offset: 0, align: 'top', duration: 700});
-  
-  }
 
 
 

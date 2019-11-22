@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactBodymovin from 'react-bodymovin'
-import animation from './anim1.json'
+import animation from './animDemo.json'
  
 const App = () => {
   const bodymovinOptions = {
-    loop: false,
+    loop: true,
     autoplay: true,
     prerender: true,
     animationData: animation

@@ -195,3 +195,39 @@ margin-top: 100px;
     justify-content: center;
   font-size: 15px;
 }
+
+
+.video-wrapper {
+    margin: auto 0 auto 0;
+}
+
+.youtube {
+    position: relative;
+    padding-bottom: 56.25%;
+
+}
+
+.youtube iframe {
+    position: absolute;
+    right:  0;
+    width: 50%;
+    height: 100%;
+    right: 35px;
+}
+.fullRap{
+    width: 100vw;
+    margin-bottom: 100px;
+}
+
+.animDemo{
+position: absolute;
+width: 20vw;
+margin-top: 17%;
+}
+
+.displayOui{
+    display: initial;
+}
+.displayNon{
+    display: none;
+}

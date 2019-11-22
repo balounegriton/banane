@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactBodymovin from 'react-bodymovin'
-import animation2 from './1212.json'
+import animation2 from './anim2.json'
  
 const App2 = () => {
   const bodymovinOptions2 = {

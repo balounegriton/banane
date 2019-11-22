@@ -51,13 +51,13 @@
   -ms-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
-  width: 7vw;
-  opacity: 0.3;
+  width: 6vw;
+  opacity: 0.7;
   filter: grayscale(100%);
   
   
 
-}
+} 
 
 .landingContainer{
   overflow-x:hidden;

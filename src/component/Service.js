@@ -20,6 +20,11 @@ class Service extends Component {
     super();
 
     this.state = {
+      Anim0: true,
+      Anim1: false,
+      Anim2: false,
+      Anim3: false,
+      Anim4: false,
 
     };
   }
@@ -34,53 +39,47 @@ class Service extends Component {
 
   toggleHover1 = () => {
     this.setState({
+      Anim0: false,
       Anim1: true,
       Anim2: false,
       Anim3: false,
       Anim4: false,
-      demo: false
+
     })
 
   }
 
   toggleHover2 = () => {
     this.setState({
+      Anim0: false,
       Anim1: false,
       Anim2: true,
       Anim3: false,
       Anim4: false,
-      demo: false
+
     })
   }
 
   toggleHover3 = () => {
 
     this.setState({
+      Anim0: false,
       Anim1: false,
-      Anim2:false,
+      Anim2: false,
       Anim3: true,
       Anim4: false,
-      demo: false
+
     })
   }
   toggleHover4 = () => {
 
     this.setState({
+      Anim0: false,
       Anim1: false,
-      Anim2:false,
+      Anim2: false,
       Anim3: false,
       Anim4: true,
-      demo: false
-    })
-  }
-  toggleHover5 = () => {
 
-    this.setState({
-      Anim1: false,
-      Anim2:false,
-      Anim3: false,
-      Anim4: true,
-      demo: true
     })
   }
 
@@ -167,20 +166,24 @@ class Service extends Component {
           </ReactHover>
 
 
-
-          {/* /////////////  ANIMATION ////////////////////////////////  */}
-
-
+          {/* ////////////!!!!!!!!!!!!!!!!!!  TEXTE CONTAINER fin !!!!!!!!!!!!!!!!!!!!!!!!!!////////////////////////////////  */}
         </div>
 
+        {/* /////////////  ANIMATION ////////////////////////////////  */}
+
+
+
+        {this.state.Anim0 && <Anim3 />
+        }
         {this.state.Anim1 && <Anim1 />
         }
         {this.state.Anim2 && <div><Anim2 /></div>
         }
-          {this.state.Anim3 && <div><Anim3 /></div>
+        {this.state.Anim3 && <div><Anim3 /></div>
+        }
+        {this.state.Anim4 && <div><Anim1 /></div>
         }
 
-       
       </div>
 
 
