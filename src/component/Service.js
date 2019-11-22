@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
 import ReactHover from 'react-hover'
-import loop from "../video/loop.mp4";
-import loop2 from "../video/loop2.mp4";
 import Anim1 from "./Animation/Amin1.js";
 import Anim2 from "./Animation/Amin2.js";
 import Anim3 from "./Animation/Amin3.js";
