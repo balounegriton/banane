@@ -89,7 +89,7 @@ class Landing extends Component {
               onClick={this.scrollMotion}>
 
               <div id="logo1" className="displayOui">
-                <Anim1 />
+                <Anim1 />allo
 
               </div>
               <div id="logo2" className="displayNon">
