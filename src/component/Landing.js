@@ -94,7 +94,7 @@ class Landing extends Component {
               </div>
               <div id="logo2" className="displayNon">
 
-                <Anim2 />
+                <Anim2 />allo
               </div>
 
 
