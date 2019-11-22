@@ -70,7 +70,7 @@ class Landing extends Component {
       return (
 
         <div className="">
-          mobile ou tablette
+          mobile ou tablette a
             </div>
       )
     }
