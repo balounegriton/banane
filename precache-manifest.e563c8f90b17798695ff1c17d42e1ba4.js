@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a927bfd51bd1d3b85036efed260a9616",
+    "revision": "a00d1a83d02e43f84e26d43bb494e158",
     "url": "/index.html"
   },
   {
-    "revision": "9bb4f90ce1252acaeaa1",
-    "url": "/static/css/main.4d738849.chunk.css"
+    "revision": "3ad43d8904e90a94826a",
+    "url": "/static/css/main.bd1ecb07.chunk.css"
   },
   {
-    "revision": "274972e4ce423b356da1",
-    "url": "/static/js/2.a2a4d2c9.chunk.js"
+    "revision": "414f07fcee9d0c06de7a",
+    "url": "/static/js/2.0ac638bf.chunk.js"
   },
   {
-    "revision": "9bb4f90ce1252acaeaa1",
-    "url": "/static/js/main.c527d5cd.chunk.js"
+    "revision": "3ad43d8904e90a94826a",
+    "url": "/static/js/main.67b382f0.chunk.js"
   },
   {
     "revision": "1f3c89d7d8e9d2ccca39",
@@ -26,10 +26,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "23db97139feddf3d99fc676ddb418219",
     "url": "/static/media/Gotham-Light.23db9713.otf"
-  },
-  {
-    "revision": "cc05237b03aaf541077f9a5f726ba48d",
-    "url": "/static/media/logo.cc05237b.png"
   },
   {
     "revision": "696bc775a92f8acf42eb3c3fab9405e4",
