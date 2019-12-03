@@ -26,7 +26,8 @@ textarea{
 
   body{
     font-family:gotLight;
-    background: rgb(249, 229, 176)
+    background: rgb(249, 229, 176);
+    overflow: hidden;
   }
 
 .nav {
@@ -161,7 +162,6 @@ margin-top: 100px;
 
 .serviceDiv{
     display: flex;
-    justify-content: space-between;
     margin-top: 100px;
 }
 
@@ -220,9 +220,10 @@ margin-top: 100px;
 }
 
 .animDemo{
-position: absolute;
-width: 20vw;
-margin-top: 17%;
+    position: absolute;
+    width: 30vw;
+    margin-top: 15%;
+    margin-left: 30px;
 }
 
 .displayOui{
@@ -233,4 +234,17 @@ margin-top: 17%;
 }
 .displayNon{
     display: none;
+}
+
+.demoFont{
+    position: absolute;
+    font-size: 400px;
+    margin-top: 3%;
+    font-family: gotBold;
+    color:  rgb(245, 221, 161);
+
+}
+
+.animSize{
+    width: 900px;
 }

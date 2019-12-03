@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../App.css';
-import logo from "../images/logo.png"
 import ScrollEvent from 'react-onscroll';
 
 class Navbar extends Component {

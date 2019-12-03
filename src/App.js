@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import Navbar from './component/Navbar.js'
 import Landing from './component/Landing.js'
-import Demo from './component/Demo.js'
-import Client from './component/Client.js'
-
 import Service from './component/Service.js'
 import Contact from './component/Contact.js'
 import Message from './component/Message.js'

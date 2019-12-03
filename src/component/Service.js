@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import '../App.css';
 import ReactHover from 'react-hover'
-import Anim1 from "./Animation/Amin1.js";
-import Anim2 from "./Animation/Amin2.js";
-import Anim3 from "./Animation/Amin3.js";
+import Anim0 from "./Animation/AnimLand.js";
+import Anim1 from "./Animation/AnimVideo.js";
+import Anim2 from "./Animation/AnimPhoto.js";
+import Anim3 from "./Animation/AnimMotion.js";
+import Anim4 from "./Animation/AnimWeb.js";
 
 const optionsCursorTrueWithMargin = {
   followCursor: true,
@@ -171,15 +173,15 @@ class Service extends Component {
 
 
 
-        {this.state.Anim0 && <Anim3 />
+        {this.state.Anim0 && <div className="animSize"><Anim0  /></div>
         }
-        {this.state.Anim1 && <Anim1 />
+        {this.state.Anim1 && <div className="animSize"><Anim1  /></div>
         }
-        {this.state.Anim2 && <div><Anim2 /></div>
+        {this.state.Anim2 && <div className="animSize"><Anim2  /></div>
         }
-        {this.state.Anim3 && <div><Anim3 /></div>
+        {this.state.Anim3 && <div className="animSize"><Anim3  /></div>
         }
-        {this.state.Anim4 && <div><Anim1 /></div>
+        {this.state.Anim4 && <div className="animSize"><Anim4  /></div>
         }
 
       </div>

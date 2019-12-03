@@ -30,12 +30,20 @@ class Landing extends Component {
   componentDidMount() {
     if (!this.props.isMobile() && this.refs.vidRef !== undefined) {
       this.refs.vidRef.pause();
+      setTimeout(() => {
+        document.getElementById("video1").className = "mouseNotHover";
+   
+        
+      }, 5000);
+      setTimeout(() => {
+     
+        document.getElementById("forHover").className = "logoLanding";
+        document.body.style.overflow = "scroll";
+        
+      }, 6000);
     }
-  }
-  componentDidUpdate() {
-    if (!this.props.isMobile() && this.refs.vidRef !== undefined) {
-      this.refs.vidRef.pause();
-    }
+  
+
   }
 
 
@@ -83,18 +91,18 @@ class Landing extends Component {
           <div className="landingContainer">
 
 
-            <div className="logoLanding"
+            <div  id="forHover" className="logoLandingLoad"
               onMouseEnter={this.playVideo}
               onMouseLeave={this.pauseVideo}
               onClick={this.scrollMotion}>
 
               <div id="logo1" className="displayOui">
-                <Anim1 />allo
+                <Anim1 />
 
               </div>
               <div id="logo2" className="displayNon">
 
-                <Anim2 />allo
+                <Anim2 />
               </div>
 
 
@@ -106,7 +114,7 @@ class Landing extends Component {
             <div className="colorBackground">
               <video
                 id="video1"
-                className="mouseNotHover"
+                className="introNoMouse"
                 ref="vidRef"
                 src={loop}
                 type="video/mp4"
@@ -120,6 +128,7 @@ class Landing extends Component {
 
           </div>
 
+<div className="demoFont">DEMO<br/>REEL</div>
 
           <div className="animDemo" ><AnimDemo /> </div>
 
