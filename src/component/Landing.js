@@ -74,17 +74,8 @@ class Landing extends Component {
 
   render() {
 
-    if (this.props.isMobile() || this.props.isTablet()) {
-      return (
-
-        <div className="">
-          mobile ou tablette a
-            </div>
-      )
-    }
 
 
-    else {
 
       return (
         <div>
@@ -154,7 +145,7 @@ class Landing extends Component {
         </div>
       )
 
-    }
+
   }
 }
 

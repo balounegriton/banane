@@ -97,7 +97,7 @@ class Service extends Component {
 
         <div className="texteContainer">
 
-          <p className="texteService" > SERVICE:
+          <p className="texteService" > SERVICES:
 </p>
 
           {/* /////////////  texte braker ////////////////////////////////  */}
@@ -109,9 +109,16 @@ class Service extends Component {
 </p>
             </ReactHover.Trigger>
             <ReactHover.Hover type='hover'>
-              <div className="boxSize">
-                m tempus, imperdiet nisl et, lacinia diam. Maecenas condimentum odio eu mollis commodo. Curabitur eget sapien mattis, molestie eros ac, mattis turpis. Praesent eget felis non dolor vehicula facilisis. Sed tristique dignissim fringilla. Aliquam velit leo, lacinia imperdiet sem et, feugiat imperdiet ipsum. Sed aliquet ante ut augue feugiat auctor. Mauris non justo quis sem convallis aliquet. Q
-              </div>
+              
+            {this.props.languageFr &&  <div className="boxSize">
+              TV et Web. Spécialisé dans les tournage corpo, entrevue, conférence et captation sportive. Notre équipement et a la pointe de la technologie. Fait intéressant, en 2019, 80% du contenu partager sur le web est de la vidéo.
+              </div>}
+            
+              {!this.props.languageFr &&  <div className="boxSize">
+              English TV et Web. Spécialisé dans les tournage corpo, entrevue, conférence et captation sportive. Notre équipement et a la pointe de la technologie. Fait intéressant, en 2019, 80% du contenu partager sur le web est de la vidéo.
+              </div>}
+
+            
             </ReactHover.Hover>
           </ReactHover>
 
@@ -124,9 +131,15 @@ class Service extends Component {
 </p>
             </ReactHover.Trigger>
             <ReactHover.Hover type='hover'>
-              <div className="boxSize">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis sem llis aliquet. Q
-              </div>
+
+            {this.props.languageFr &&  <div className="boxSize">
+            Photo de nimporte quoi, meme ta kequette si tu veux.
+              </div>}
+            
+              {!this.props.languageFr &&  <div className="boxSize">
+              en anglais mais photo de nimporte quoi, meme ta kequette si tu veux.
+              </div>}
+
             </ReactHover.Hover>
           </ReactHover>
 
@@ -137,9 +150,13 @@ class Service extends Component {
 </p>
             </ReactHover.Trigger>
             <ReactHover.Hover type='hover'>
-              <div className="boxSize">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed, imperdiet nisl et, lacinia diam. Maecenas condimentum odio eu mollis commodo. Curabitur eget sapien mattis, molestie eros ac, mattis turpis. Praesent eget felis non dolor vehicula facilisis. Sed tristique dignissim fringilla. Aliquam velit leo, lacinia imperdiet sem et, feugiat imperdiet ipsum. Sed aliquet ante ut augue feugiat auctor. Mauris non justo quis sem convallis aliquet. Q
-              </div>
+            {this.props.languageFr &&  <div className="boxSize">
+           du motion desing c'es bin nice
+              </div>}
+            
+              {!this.props.languageFr &&  <div className="boxSize">
+              English   du motion desing c'es bin nice
+              </div>}
             </ReactHover.Hover>
           </ReactHover>
 
@@ -159,9 +176,13 @@ class Service extends Component {
 </p>
             </ReactHover.Trigger>
             <ReactHover.Hover type='hover'>
-              <div className="boxSize">
-                Loimentum odio eu mollis commodo. Curabitur eget sapien mattis, molestie eros ac, mattis turpis. Praesent eget felis non dolor vehicula facilisis. Sed tristique dignissim fringilla. Aliquam velit leo, lacinia imperdiet sem et, feugiat imperdiet ipsum. Sed aliquet ante ut augue feugiat auctor. Mauris non justo quis sem convallis aliquet. Q
-              </div>
+            {this.props.languageFr &&  <div className="boxSize">
+             tu veux tu qu'on en parle du coding
+              </div>}
+            
+              {!this.props.languageFr &&  <div className="boxSize">
+             too much coding for mee
+              </div>}
             </ReactHover.Hover>
           </ReactHover>
 
