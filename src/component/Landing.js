@@ -27,23 +27,27 @@ class Landing extends Component {
   };
 
 
+
   componentDidMount() {
-    if (!this.props.isMobile() && this.refs.vidRef !== undefined) {
-      this.refs.vidRef.pause();
+    if (this.refs.vidRef !== undefined) {
+
+
       setTimeout(() => {
         document.getElementById("video1").className = "mouseNotHover";
-   
-        
+
+
       }, 5000);
       setTimeout(() => {
-     
+
         document.getElementById("forHover").className = "logoLanding";
-        document.body.style.overflow = "scroll";
-        
+
+
       }, 6000);
     }
-  
 
+    else {
+     
+    }
   }
 
 
@@ -76,13 +80,49 @@ class Landing extends Component {
 
 
 
+    if (this.props.isMobile() || this.props.isTablet()) {
+      return (
+
+        
+<div>
+<Anim2 />
+  <div className="demoFont">DEMO<br />REEL</div>
+
+  <div className="animDemo" ><AnimDemo /> </div>
+
+  <div className="youtube" ref={section => {
+    this.sectionMotion = section;
+  }}>
+
+
+    <iframe src="https://player.vimeo.com/video/248658478?autoplay=1"
+      title="demo"
+      className=""
+      frameBorder="0"
+
+      webkitallowfullscreen="true"
+      mozallowfullscreen="true"
+      allowFullScreen
+      autoPlay></iframe>
+
+  </div>
+
+
+</div>
+         )
+
+
+
+    }
+
+    else {
 
       return (
         <div>
           <div className="landingContainer">
 
 
-            <div  id="forHover" className="logoLandingLoad"
+            <div id="forHover" className="logoLandingLoad"
               onMouseEnter={this.playVideo}
               onMouseLeave={this.pauseVideo}
               onClick={this.scrollMotion}>
@@ -105,7 +145,7 @@ class Landing extends Component {
             <div className="colorBackground">
               <video
                 id="video1"
-                className="introNoMouse"
+                className="mouseNotHover"
                 ref="vidRef"
                 src={loop}
                 type="video/mp4"
@@ -119,7 +159,7 @@ class Landing extends Component {
 
           </div>
 
-<div className="demoFont">DEMO<br/>REEL</div>
+          <div className="demoFont">DEMO<br />REEL</div>
 
           <div className="animDemo" ><AnimDemo /> </div>
 
@@ -144,6 +184,9 @@ class Landing extends Component {
 
         </div>
       )
+
+    }
+
 
 
   }
