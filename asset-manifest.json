@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.8dca8951.chunk.css",
-    "main.js": "/static/js/main.cf6c9249.chunk.js",
-    "main.js.map": "/static/js/main.cf6c9249.chunk.js.map",
+    "main.js": "/static/js/main.8fe94941.chunk.js",
+    "main.js.map": "/static/js/main.8fe94941.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e89362ac.js",
     "runtime-main.js.map": "/static/js/runtime-main.e89362ac.js.map",
     "static/js/2.ac77167d.chunk.js": "/static/js/2.ac77167d.chunk.js",
     "static/js/2.ac77167d.chunk.js.map": "/static/js/2.ac77167d.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.b363c84575b8c289f0a9352224f27180.js": "/precache-manifest.b363c84575b8c289f0a9352224f27180.js",
+    "precache-manifest.e8467c8679c93b3dea63f208653f7758.js": "/precache-manifest.e8467c8679c93b3dea63f208653f7758.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.8dca8951.chunk.css.map": "/static/css/main.8dca8951.chunk.css.map",
     "static/media/App.css": "/static/media/Gotham-Light.23db9713.otf",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.e89362ac.js",
     "static/js/2.ac77167d.chunk.js",
     "static/css/main.8dca8951.chunk.css",
-    "static/js/main.cf6c9249.chunk.js"
+    "static/js/main.8fe94941.chunk.js"
   ]
 }
