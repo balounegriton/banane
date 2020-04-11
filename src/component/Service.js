@@ -119,7 +119,7 @@ class Service extends Component {
 
 
 
-          <p id="service1" className="texteService notClick" onClick={this.toggleHover1}> VIDEO.
+          <p id="service1" className="texteService notClick" onMouseOver={this.toggleHover1}> VIDEO.
 </p>
 
 
@@ -131,7 +131,7 @@ class Service extends Component {
 
           {/* /////////////  texte braker ////////////////////////////////  */}
 
-          <p id="service2" className="texteService notClick" onClick={this.toggleHover2}> PHOTO.
+          <p id="service2" className="texteService notClick" onMouseOver={this.toggleHover2}> PHOTO.
 </p>
 
 
@@ -140,7 +140,7 @@ class Service extends Component {
 
           {/* /////////////  texte braker ////////////////////////////////  */}
 
-          <p id="service3"className="texteService notClick" onClick={this.toggleHover3}> MOTION.
+          <p id="service3"className="texteService notClick" onMouseOver={this.toggleHover3}> MOTION.
 </p>
 
 
@@ -158,7 +158,7 @@ class Service extends Component {
           {/* /////////////  texte braker ////////////////////////////////  */}
 
 
-          <p id="service4" className="texteService notClick" onClick={this.toggleHover4}> WEB.
+          <p id="service4" className="texteService notClick" onMouseOver={this.toggleHover4}> WEB.
 </p>
 
 
@@ -174,8 +174,6 @@ class Service extends Component {
 
 
 
-        {this.state.Anim0 && <div className="animSize"><Anim0 /></div>
-        }
         {this.state.Anim1 && 
         
         <div className="texteAnim">
@@ -186,7 +184,7 @@ class Service extends Component {
           <div>
 
             {this.props.languageFr && <div className="boxSize">
-              TV et Web. Spécialisé dans les tournage corpo, entrevue, conférence et captation sportive. Notre équipement et a la pointe de la technologie. Fait intéressant, en 2019, 80% du contenu partager sur le web est de la vidéo.
+            Vidéo publicitaire Télévision & Web, Capsules informatives, couvertures évènementiels et corporatifs, vidéo de produit, tournage sportif.
               </div>}
 
             {!this.props.languageFr && <div className="boxSize">
@@ -229,7 +227,7 @@ class Service extends Component {
             <div>
   
               {this.props.languageFr && <div className="boxSize">
-                TV et Web. Spécialisé dans les tournage corpo, entrevue, conférence et captation sportive. Notre équipement et a la pointe de la technologie. Fait intéressant, en 2019, 80% du contenu partager sur le web est de la vidéo.
+              Solution créative. Motion desing 2D et 3D, vfx, corection de shoot, tracking, rotoscoping, kinetic typography, Trapcode particular. Solution adapté au web et au mobile native app.  
                 </div>}
   
               {!this.props.languageFr && <div className="boxSize">

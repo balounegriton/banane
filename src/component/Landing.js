@@ -28,28 +28,6 @@ class Landing extends Component {
 
 
 
-  componentDidMount() {
-    if (this.refs.vidRef !== undefined) {
-
-
-      setTimeout(() => {
-        document.getElementById("video1").className = "mouseNotHover";
-
-
-      }, 5000);
-      setTimeout(() => {
-
-        document.getElementById("forHover").className = "logoLanding";
-
-
-      }, 6000);
-    }
-
-    else {
-     
-    }
-  }
-
 
   playVideo = () => {
     this.refs.vidRef.play();
@@ -83,33 +61,30 @@ class Landing extends Component {
     if (this.props.isMobile() || this.props.isTablet()) {
       return (
 
-        
-<div>
-<Anim2 />
-  <div className="demoFont">DEMO<br />REEL</div>
 
-  <div className="animDemo" ><AnimDemo /> </div>
+        <div>
+          <div className="mobileLanding">
+            <div className="mobileLogo">
+              <Anim2 />
+            </div>
+          </div>
+          <div className="demoFont">DEMO<br />REEL</div>
 
-  <div className="youtube" ref={section => {
-    this.sectionMotion = section;
-  }}>
+          <div className="animDemo" >
+            <AnimDemo />
+          </div>
 
+          <div className="youtube" ref={section => {
+            this.sectionMotion = section;
+          }}>
 
-    <iframe src="https://player.vimeo.com/video/248658478?autoplay=1"
-      title="demo"
-      className=""
-      frameBorder="0"
+<iframe src="https://player.vimeo.com/video/403432891" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-      webkitallowfullscreen="true"
-      mozallowfullscreen="true"
-      allowFullScreen
-      autoPlay></iframe>
-
-  </div>
+          </div>
 
 
-</div>
-         )
+        </div>
+      )
 
 
 
@@ -122,7 +97,7 @@ class Landing extends Component {
           <div className="landingContainer">
 
 
-            <div id="forHover" className="logoLandingLoad"
+            <div id="forHover" className="logoLanding"
               onMouseEnter={this.playVideo}
               onMouseLeave={this.pauseVideo}
               onClick={this.scrollMotion}>
@@ -149,7 +124,6 @@ class Landing extends Component {
                 ref="vidRef"
                 src={loop}
                 type="video/mp4"
-                autoPlay
                 loop
                 muted
               />
@@ -167,17 +141,7 @@ class Landing extends Component {
             this.sectionMotion = section;
           }}>
 
-
-            <iframe src="https://player.vimeo.com/video/248658478?autoplay=1"
-              title="demo"
-              className=""
-              frameBorder="0"
-
-              webkitallowfullscreen="true"
-              mozallowfullscreen="true"
-              allowFullScreen
-              autoPlay></iframe>
-
+<iframe src="https://player.vimeo.com/video/403432891" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
           </div>
 
 

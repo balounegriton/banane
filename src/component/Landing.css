@@ -33,7 +33,7 @@
 .logoLanding {
 
   position: absolute;
-  width: 15vw;
+  width: 7vw;
   align-self: center;
   z-index: 1000;
   -webkit-transition: all 1s ease-in-out;
@@ -42,17 +42,7 @@
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
-.logoLandingLoad {
-  position: absolute;
-  width: 15vw;
-  align-self: center;
-  z-index: 1000;
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -ms-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-}
+
 
 .logoLanding:hover {
 
@@ -61,7 +51,7 @@
   -ms-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
-  width: 16vw;
+  width: 9vw;
   opacity: 0.7;
   filter: grayscale(90%);
   
@@ -74,6 +64,4 @@
   overflow-y:hidden;
   display: flex;
   justify-content: center;
-
-
 }

@@ -4,7 +4,7 @@ import animation from './anim1.json'
  
 const App = () => {
   const bodymovinOptions = {
-    loop: false,
+    loop: true,
     autoplay: true,
     prerender: true,
     animationData: animation

@@ -23,12 +23,12 @@ class Landing extends Component {
       <div>
 
         {this.props.languageFr && <div className="message">
-        C'EST SIMPLE, ON REND LA VIE SIMPLE. SIMPLE COMME MANGER UNE BANANE
+        C'EST SIMPLE, LA BANANE CRÉE DU CONTENU HORS DU COMMUN EN UTILISANT DES TECHNOLOGIES AVANCÉES.
        
         </div>}
      
 {!this.props.languageFr && <div className="message">
-          I'M TELLING YOU THE SAME RELISH BUT IN ENGLISH FOR THESE TRUMP LOVERS
+         IT'S SIMPLE, LA BANANE CREATES OUTSTANDING CONTENT USING ADVANCED TECHNOLOGIES.
         </div>}
       </div>
 
