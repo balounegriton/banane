@@ -51,7 +51,12 @@ class Landing extends Component {
       logo: true,
     })
   };
-
+  
+endLogo = () => {
+  this.setState({
+    logo: false,
+  })
+}
 
 
   render() {
@@ -62,12 +67,17 @@ class Landing extends Component {
       return (
 
 
-        <div>
-          <div className="mobileLanding">
-            <div className="mobileLogo">
-              <Anim2 />
+        <div >
+         <div className="mobileTouch" onTouchStart={this.changeLogo} onTouchEnd={this.endLogo}> 
+         </div>
+         <div className="mobileLanding">
+            <div className="mobileLogo" >
+            {!this.state.logo &&<Anim1 />}
+            {this.state.logo && <Anim2 />}
             </div>
-          </div>
+          
+         </div>
+      
           <div className="demoFont">DEMO<br />REEL</div>
 
           <div className="animDemo" >
@@ -78,7 +88,7 @@ class Landing extends Component {
             this.sectionMotion = section;
           }}>
 
-<iframe src="https://player.vimeo.com/video/403432891" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe title="MOBILE" src="https://player.vimeo.com/video/403432891" width="640" height="360" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
 
           </div>
 
@@ -141,7 +151,7 @@ class Landing extends Component {
             this.sectionMotion = section;
           }}>
 
-<iframe src="https://player.vimeo.com/video/403432891" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe title="DESKTOP" src="https://player.vimeo.com/video/403432891" width="640" height="360" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
           </div>
 
 

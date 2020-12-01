@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../App.css';
-import Anim0 from "./Animation/AnimLand.js";
 import Anim1 from "./Animation/AnimVideo.js";
 import Anim2 from "./Animation/AnimPhoto.js";
 import Anim3 from "./Animation/AnimMotion.js";
@@ -19,7 +18,6 @@ class Service extends Component {
       Anim2: false,
       Anim3: false,
       Anim4: false,
-
     };
   }
 
@@ -27,7 +25,9 @@ class Service extends Component {
   componentDidMount() {
 
 
+
   }
+
 
 
 
@@ -45,7 +45,9 @@ class Service extends Component {
     document.getElementById("service2").className = "texteService notClick";
     document.getElementById("service3").className = "texteService notClick";
     document.getElementById("service4").className = "texteService notClick";
+    
   }
+
 
   toggleHover2 = () => {
     this.setState({
@@ -140,7 +142,7 @@ class Service extends Component {
 
           {/* /////////////  texte braker ////////////////////////////////  */}
 
-          <p id="service3"className="texteService notClick" onMouseOver={this.toggleHover3}> MOTION.
+          <p id="service3" className="texteService notClick" onMouseOver={this.toggleHover3}> MOTION.
 </p>
 
 
@@ -174,64 +176,76 @@ class Service extends Component {
 
 
 
-        {this.state.Anim1 && 
-        
-        <div className="texteAnim">
+        {this.state.Anim1 &&
 
-         
+          <div className="texteAnim">
 
 
-          <div>
-
-            {this.props.languageFr && <div className="boxSize">
-            Vidéo publicitaire Télévision & Web, Capsules informatives, couvertures évènementiels et corporatifs, vidéo de produit, tournage sportif.
-              </div>}
-
-            {!this.props.languageFr && <div className="boxSize">
-              English TV et Web. Spécialisé dans les tournage corpo, entrevue, conférence et captation sportive. Notre équipement et a la pointe de la technologie. Fait intéressant, en 2019, 80% du contenu partager sur le web est de la vidéo.
-              </div>}
-          </div>
-          <div className="animSize">
-            <Anim1 />
-          </div>
-        </div>
-
-        }
-        {this.state.Anim2 && 
-            <div className="texteAnim">
-
-         
 
 
             <div>
-  
+              {/* ///////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\//////1/ VIDEO */}
               {this.props.languageFr && <div className="boxSize">
-                TV et Web. Spécialisé dans les tournage corpo, entrevue, conférence et captation sportive. Notre équipement et a la pointe de la technologie. Fait intéressant, en 2019, 80% du contenu partager sur le web est de la vidéo.
-                </div>}
-  
+              Vidéo publicitaire télévision & web, capsules informatives, couvertures événementielles, conférence avec diffusion live,
+
+              </div>}
+
               {!this.props.languageFr && <div className="boxSize">
-                English TV et Web. Spécialisé dans les tournage corpo, entrevue, conférence et captation sportive. Notre équipement et a la pointe de la technologie. Fait intéressant, en 2019, 80% du contenu partager sur le web est de la vidéo.
-                </div>}
+              Television & web advertising video, informative capsules, event covers, conference with live broadcast.
+              </div>}
             </div>
             <div className="animSize">
-              <Anim2 />
+              <Anim1 />
             </div>
           </div>
-        }
-        {this.state.Anim3 && 
-            <div className="texteAnim">
 
-         
+        }
+        {this.state.Anim2 &&
+          <div className="texteAnim">
+
+
 
 
             <div>
-  
+              {/* ///////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\/////// Photo */}
+             
+              <div className="colorBackground">
+      
+            </div>
               {this.props.languageFr && <div className="boxSize">
-              Solution créative. Motion desing 2D et 3D, vfx, corection de shoot, tracking, rotoscoping, kinetic typography, Trapcode particular. Solution adapté au web et au mobile native app.  
+              Photographie d’ambiance, de produits, portraits corporatifs, campagnes publicitaires, aventure, retouche professionnelle.
                 </div>}
-  
+
               {!this.props.languageFr && <div className="boxSize">
-                English TV et Web. Spécialisé dans les tournage corpo, entrevue, conférence et captation sportive. Notre équipement et a la pointe de la technologie. Fait intéressant, en 2019, 80% du contenu partager sur le web est de la vidéo.
+              Ambient, product photography, corporate portraits, advertising campaigns, adventure, professional retouching.
+
+                </div>}
+        
+          
+                
+                 
+            </div>
+       
+            <div className="animSize">
+              <Anim2 />
+            
+            </div>
+          </div>
+        }
+        {this.state.Anim3 &&
+          <div className="texteAnim">
+
+
+
+
+            <div>
+ {/* ///////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\/////// MOTION */}
+              {this.props.languageFr && <div className="boxSize">
+              Solution créative. Motion design 2D et 3D, vfx, corrections de shoot, tracking, rotoscoping, kinetic typography, Trapcode particular. 
+                </div>}
+
+              {!this.props.languageFr && <div className="boxSize">
+              Creative solution. Motion design 2D and 3D, vfx, shoot corrections, tracking, rotoscoping, kinetic typography, Trapcode particular. 
                 </div>}
             </div>
             <div className="animSize">
@@ -239,20 +253,20 @@ class Service extends Component {
             </div>
           </div>
         }
-        {this.state.Anim4 && 
-            <div className="texteAnim">
+        {this.state.Anim4 &&
+          <div className="texteAnim">
 
-         
+
 
 
             <div>
-  
+ {/* ///////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\/////// WEB */}
               {this.props.languageFr && <div className="boxSize">
-                TV et Web. Spécialisé dans les tournage corpo, entrevue, conférence et captation sportive. Notre équipement et a la pointe de la technologie. Fait intéressant, en 2019, 80% du contenu partager sur le web est de la vidéo.
+              Applications web conçues avec React.js et autres “leading edge tech”, animations exportées en .json, approche “mobile first”, correction de bug. 
                 </div>}
-  
+
               {!this.props.languageFr && <div className="boxSize">
-                English TV et Web. Spécialisé dans les tournage corpo, entrevue, conférence et captation sportive. Notre équipement et a la pointe de la technologie. Fait intéressant, en 2019, 80% du contenu partager sur le web est de la vidéo.
+              Web applications designed with React.js and other leading edge technology. Animations exported in .json, mobile first approach, bug correction. 
                 </div>}
             </div>
             <div className="animSize">
