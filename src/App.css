@@ -1,315 +1,286 @@
- /*///////////// FONT pour toute le document/////// */
- @font-face {
+
+@font-face {
     font-family: gotBold;
     src: url(Gotham-Bold.otf);
   }
-
+  
+  
   @font-face {
     font-family: gotLight;
     src: url(Gotham-Light.otf);
   } 
-  input[type=text] {
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid #000000;
-}
-
-textarea{
-    background: transparent;
-    border: 1px solid #000000;
-    resize: none;
-    width: 250px;
-    height: 255px;
-    
-   
-}
-
+  /* ////////////////////////// */
   body{
-    font-family:gotLight;
-    background: rgb(249, 229, 176);
+    background: black;
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;
+  }
+  .box{
+  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
+
+  }
+  
+  .box2{
+    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
+  
+    }
+  
+  .black{
+    background: black
+  }
+  
+  .container{
+    display: flex;
+    justify-content: center;
+  }
+   
+  .cover{
+ 
+  }
+  
+  .logo{
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    width: 6vw;
+    margin: 2%;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .logoOff{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 6vw;
+    margin: 2%;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .texte{
+    font-family: gotBold;
+    color: white;
+    position: absolute;
+    margin-top: -10vh;
+  }
+  
+  .texte2{
+    font-family: gotLight;
+    color: white;
+    position: absolute;
+    margin-top: -8vh;
+  }
+  
+  .vide{
+   height:  100vh
+  
+  }
+
+  
+  
+  
+  
+  .anim0{
+    width: 33vw;
+    margin-top: 100px;
+    position:absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+
+
+/* 
+  /////////////////////////////////////////////////////// {} */
+
+
+.grosTexte{
+  
+  background: rosybrown
+}
+
+.bouton{
+  background: red;
+ width: 10vw;
+}
+.player{
+
+
+
+}
+
+
+svg:hover {
+  fill: red;
+}
+.arrow{
+  margin-top: 55vh;
+  position: absolute;
+   top: 50%;
 
   }
 
-.nav {
-    opacity: 1;
-    position: fixed;
-    display: flex;
-    z-index: 2000000;
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -ms-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
+  .flecheGauche{
     
-}
-.navHid{
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -ms-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
-    opacity: 0;
-}
-
-
-.demo {
-  margin-top: 10vh;;
-
-}
-
-.service {
-    height: 70vh;
-  
-}
-
-.client {
-    height: 70vh;
-
-}
-
-.contact {
-
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-
-}
-
-.logo {
-
-    width: 70px;
-}
-
-
-.language-container {
     position: fixed;
-    display: flex;
-    right: 0;
-}
+    top: 45%;
+    left: 2%;
+  }
 
-.language-texte-selected {
-    color: black;
-    font-size: 30px;
-    text-decoration: underline;
-    cursor: default;
     
-}
-
-.language-slash {
-    color: black;
-    font-size: 30px;
-    cursor: default;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.language-texte {
-    color: black;
-    font-size: 30px;
-    cursor: pointer;
-}
-
-.demoPlayer{
-    display: flex;
-    justify-content: space-between;
-   
-
- 
-}
-
-.texteContainer{
-
-margin-left: 10px;
-}
-
-.texteService{
-    cursor: pointer;
-    font-size: 6vw;
-    margin: 0;
-}
-
-
- 
- 
-
-.demoDiv{
-    filter: grayscale(100%) contrast(100%);
-    mix-blend-mode: luminosity;
-    opacity: .9;
-    width: 50vw;
-  margin-right: 100px;
-}
-.boxSize{
-margin-top: 5vw;
-    width: 53vw;
-    font-size: 4vw;
-    margin-left: 3vw;
-
-}
-
-.message{
-    font-family: gotBold;
-    font-size: 6.4vw;
-    margin-left: 10px;
-}
-
-
-
-.serviceDiv{
-    display: flex;
-    margin-top: 100px;
-}
-
-.video1{
-    filter: grayscale(100%) contrast(100%);
-    mix-blend-mode: luminosity;
-    opacity: .2;
-    width: 50vw;
-  margin-right: 100px;
-}
-
-.emailAdresse{
-    font-size: 8vw;
-    margin-top: 50vh;
-}
-
-.emptydiv {
-    width: 100vw;
-    height: 100vh;
-}
-
-.pageBackground {
-
+  .flecheDroite{
     position: fixed;
-    z-index: 1000;
-    top: 0;
-}
+    top: 45%;
+    right: 2%;
+    }
 
-.phoneNum{
-    display: flex;
+    .compteur{
+     display: flex;
     justify-content: center;
-  font-size: 15px;
-}
+    color: rgb(255, 230, 154);
+    font-family: gotLight;  
+    font-size: large;
+  }
+  
 
 
-.video-wrapper {
-    margin: auto 0 auto 0;
-}
+  #gauche{
+    width: 6vw;
+  }
 
-.youtube {
+  #droite{
+    width: 6vw;
+  }
+
+  .player-wrapper {
     position: relative;
-    padding-bottom: 56.25%;
-
-}
-
-.youtube iframe {
+    padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
+  }
+  
+  .react-player {
     position: absolute;
-    right:  0;
-    width: 50%;
-    height: 100%;
-    right: 35px;
-}
-.fullRap{
-    width: 100vw;
-    margin-bottom: 100px;
-}
+    top: 0;
+    left: 0;
+  }
 
-.animDemo{
-    position: absolute;
-
-
-}
-
-.displayOui{
-    display: initial;
-}
-.displayNon{
-    display: none;
-}
-.displayNon{
-    display: none;
-}
-
-.demoFont{
-    position: absolute;
-font-size: 23vw;
-    margin-top: 3%;
-    font-family: gotBold;
-    color:  rgb(245, 221, 161);
-
-}
-
-
-
-
-.animSize{
-    position: absolute;
-    z-index: -100;
-    width: 100vw;
-    right: 0;
-
-}
-
-.mobileLanding{
+  .test4{
+  width: 60vw;
+  }
+  .test5{
     display: flex;
-    height: 100vh;
     justify-content: center;
     align-items: center;
-}
-
-.mobileLogo{
-  width: 40vw;
-
-}
-
-
-.texteAnim{
-    margin-left: 20px;
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.notClick{
-    cursor: pointer;
-}
-
-.clicked{
-    cursor: pointer;
-   font-family: gotBold;;
-}
-
-.image{
-    width: 30vw;
- position: absolute;
-    z-index: -100;
-margin-top: 5vw;
-  opacity: .7;
-  right: 0;
-}
-.image2{
-    width: 30vw;
- position: absolute;
-    z-index: -100;
-margin-top: 15vw;
-  opacity: .7;
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -ms-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-}
-
-.mobileTouch{
     height: 100vh;
-    width: 100vw;
+    }
+
+  .test2{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  }
+
+  .test3{
     position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .logoLanding{
+    width: 60vw;
+    }
+
+    .texteDemo{
+      position: absolute;
+      bottom: 3%;
+      text-align: center;
+      width: 100%;
+      cursor: pointer;
+}
+
+.texteDemo2{
+  font-family: gotBold;
+  color: rgb(255, 230, 154);
+text-align: center;
+font-size: 3vw;
 }
 
 
-@media only screen and (max-width: 600px) {
-    .serviceDiv{
-        display: flex;
-        margin-top: 10px;
-    }
-  }
+.texteDemo2Hover{
+  font-family: gotBold;
+color: rgb(0, 0, 0);
+font-size: 3vw;
+text-align: center;
+text-shadow:
+  -0.5px -0.5px 0 rgb(255, 230, 154),
+  0.5px -0.5px 0 rgb(255, 230, 154),
+  -0.5px 0.5px 0 rgb(255, 230, 154),
+  0.5px 0.5px 0 rgb(255, 230, 154);
+}
+.apropos{
+  position: absolute;
+  top:0;
+  right: 0;
+  margin: 2%;
+  cursor: pointer;
+}
+
+
+
+.apropos2Hover{
+  font-family: gotBold;
+  color: rgb(255, 230, 154);
+font-size: 3vw;
+text-align: center;
+text-shadow:
+  -0.5px -0.5px 0 rgb(255, 230, 154),
+  0.5px -0.5px 0 rgb(255, 230, 154),
+  -0.5px 0.5px 0 rgb(255, 230, 154),
+  0.5px 0.5px 0 rgb(255, 230, 154);
+}
+
+
+.apropos2{
+  font-family: gotBold;
+  color: rgb(255, 230, 154);
+font-size: 3vw;
+text-align: center;
+}
+.apropos2Hover{
+  font-family: gotBold;
+color: rgb(0, 0, 0);
+font-size: 3vw;
+text-align: center;
+text-shadow:
+  -0.5px -0.5px 0 rgb(255, 230, 154),
+  0.5px -0.5px 0 rgb(255, 230, 154),
+  -0.5px 0.5px 0 rgb(255, 230, 154),
+  0.5px 0.5px 0 rgb(255, 230, 154);
+}
+
+.cover1{
+
+  background: red;
+}
+
+.blackText{
+
+color: rgb(0, 0, 0);
+}

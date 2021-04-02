@@ -12,8 +12,10 @@
     "react-hover": "^1.4.0",
     "react-lottie": "^1.2.3",
     "react-onscroll": "^1.0.4",
+    "react-player": "^2.9.0",
     "react-scripts": "^3.4.1",
-    "react-scroll-to-component": "^1.0.2"
+    "react-scroll-to-component": "^1.0.2",
+    "react-swipe": "^6.0.4"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -39,6 +41,7 @@
     ]
   },
   "devDependencies": {
+    "file-loader": "^6.2.0",
     "gh-pages": "^2.2.0"
   }
 }
