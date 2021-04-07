@@ -1,30 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.eec135c2.chunk.css",
-    "main.js": "/static/js/main.6be2d490.chunk.js",
-    "main.js.map": "/static/js/main.6be2d490.chunk.js.map",
+    "main.css": "/static/css/main.ff1c21bf.chunk.css",
+    "main.js": "/static/js/main.6c2f7313.chunk.js",
+    "main.js.map": "/static/js/main.6c2f7313.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e1daef6b.js",
     "runtime-main.js.map": "/static/js/runtime-main.e1daef6b.js.map",
-    "static/js/2.e77dd0db.chunk.js": "/static/js/2.e77dd0db.chunk.js",
-    "static/js/2.e77dd0db.chunk.js.map": "/static/js/2.e77dd0db.chunk.js.map",
+    "static/js/2.ad0d9b88.chunk.js": "/static/js/2.ad0d9b88.chunk.js",
+    "static/js/2.ad0d9b88.chunk.js.map": "/static/js/2.ad0d9b88.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.f1512b46eee992b68a00e4ba9b65c333.js": "/precache-manifest.f1512b46eee992b68a00e4ba9b65c333.js",
+    "precache-manifest.740867628bf3a64378f201c060b57d39.js": "/precache-manifest.740867628bf3a64378f201c060b57d39.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.eec135c2.chunk.css.map": "/static/css/main.eec135c2.chunk.css.map",
-    "static/js/2.e77dd0db.chunk.js.LICENSE.txt": "/static/js/2.e77dd0db.chunk.js.LICENSE.txt",
+    "static/css/main.ff1c21bf.chunk.css.map": "/static/css/main.ff1c21bf.chunk.css.map",
+    "static/js/2.ad0d9b88.chunk.js.LICENSE.txt": "/static/js/2.ad0d9b88.chunk.js.LICENSE.txt",
     "static/media/App.css": "/static/media/Gotham-Light.23db9713.otf",
-    "static/media/apropos.svg": "/static/media/apropos.9422fdf5.svg",
-    "static/media/droite.svg": "/static/media/droite.695dc4ca.svg",
-    "static/media/droite2.svg": "/static/media/droite2.86ed4197.svg",
-    "static/media/gauche.svg": "/static/media/gauche.9805d2a6.svg",
-    "static/media/gauche2.svg": "/static/media/gauche2.ed523931.svg",
-    "static/media/logo.svg": "/static/media/logo.a611c6ec.svg",
     "static/media/logoBanane.78b8f44c.png": "/static/media/logoBanane.78b8f44c.png"
   },
   "entrypoints": [
     "static/js/runtime-main.e1daef6b.js",
-    "static/js/2.e77dd0db.chunk.js",
-    "static/css/main.eec135c2.chunk.css",
-    "static/js/main.6be2d490.chunk.js"
+    "static/js/2.ad0d9b88.chunk.js",
+    "static/css/main.ff1c21bf.chunk.css",
+    "static/js/main.6c2f7313.chunk.js"
   ]
 }
