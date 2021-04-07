@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.69a29264.chunk.css",
+    "main.css": "/static/css/main.a07706ac.chunk.css",
     "main.js": "/static/js/main.ab496842.chunk.js",
     "main.js.map": "/static/js/main.ab496842.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e1daef6b.js",
@@ -8,9 +8,9 @@
     "static/js/2.8e45ff44.chunk.js": "/static/js/2.8e45ff44.chunk.js",
     "static/js/2.8e45ff44.chunk.js.map": "/static/js/2.8e45ff44.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.16562ff05cde73c78e96417b8018c162.js": "/precache-manifest.16562ff05cde73c78e96417b8018c162.js",
+    "precache-manifest.64ca338a12ba1ea531ee36dca44f34c3.js": "/precache-manifest.64ca338a12ba1ea531ee36dca44f34c3.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.69a29264.chunk.css.map": "/static/css/main.69a29264.chunk.css.map",
+    "static/css/main.a07706ac.chunk.css.map": "/static/css/main.a07706ac.chunk.css.map",
     "static/js/2.8e45ff44.chunk.js.LICENSE.txt": "/static/js/2.8e45ff44.chunk.js.LICENSE.txt",
     "static/media/App.css": "/static/media/Gotham-Light.23db9713.otf",
     "static/media/logoBanane.78b8f44c.png": "/static/media/logoBanane.78b8f44c.png"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.e1daef6b.js",
     "static/js/2.8e45ff44.chunk.js",
-    "static/css/main.69a29264.chunk.css",
+    "static/css/main.a07706ac.chunk.css",
     "static/js/main.ab496842.chunk.js"
   ]
 }
