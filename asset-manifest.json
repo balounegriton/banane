@@ -1,29 +1,31 @@
 {
   "files": {
     "main.css": "/static/css/main.1d06d425.chunk.css",
-    "main.js": "/static/js/main.bf772101.chunk.js",
-    "main.js.map": "/static/js/main.bf772101.chunk.js.map",
+    "main.js": "/static/js/main.bff4b94c.chunk.js",
+    "main.js.map": "/static/js/main.bff4b94c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e1daef6b.js",
     "runtime-main.js.map": "/static/js/runtime-main.e1daef6b.js.map",
-    "static/js/2.1977b91a.chunk.js": "/static/js/2.1977b91a.chunk.js",
-    "static/js/2.1977b91a.chunk.js.map": "/static/js/2.1977b91a.chunk.js.map",
+    "static/js/2.49707a2b.chunk.js": "/static/js/2.49707a2b.chunk.js",
+    "static/js/2.49707a2b.chunk.js.map": "/static/js/2.49707a2b.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.4202a440fdbb8e4af97011edf460f530.js": "/precache-manifest.4202a440fdbb8e4af97011edf460f530.js",
+    "precache-manifest.06be122bff06f4f8668e7fa751ccf4b9.js": "/precache-manifest.06be122bff06f4f8668e7fa751ccf4b9.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.1d06d425.chunk.css.map": "/static/css/main.1d06d425.chunk.css.map",
-    "static/js/2.1977b91a.chunk.js.LICENSE.txt": "/static/js/2.1977b91a.chunk.js.LICENSE.txt",
+    "static/js/2.49707a2b.chunk.js.LICENSE.txt": "/static/js/2.49707a2b.chunk.js.LICENSE.txt",
     "static/media/App.css": "/static/media/Gotham-Medium.b34a7272.otf",
+    "static/media/cactus.1d4b876c.png": "/static/media/cactus.1d4b876c.png",
     "static/media/droite.svg": "/static/media/droite.695dc4ca.svg",
     "static/media/droite2.svg": "/static/media/droite2.1a1cb999.svg",
     "static/media/gauche.svg": "/static/media/gauche.9805d2a6.svg",
     "static/media/gauche2.svg": "/static/media/gauche2.eb6bc1c0.svg",
     "static/media/logoBanane.78b8f44c.png": "/static/media/logoBanane.78b8f44c.png",
-    "static/media/tablebois.PNG": "/static/media/tablebois.c6c0d6a5.PNG"
+    "static/media/paliser.6396d0f2.png": "/static/media/paliser.6396d0f2.png",
+    "static/media/tablebois.be754426.png": "/static/media/tablebois.be754426.png"
   },
   "entrypoints": [
     "static/js/runtime-main.e1daef6b.js",
-    "static/js/2.1977b91a.chunk.js",
+    "static/js/2.49707a2b.chunk.js",
     "static/css/main.1d06d425.chunk.css",
-    "static/js/main.bf772101.chunk.js"
+    "static/js/main.bff4b94c.chunk.js"
   ]
 }
