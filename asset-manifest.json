@@ -1,24 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.79ca3754.chunk.css",
-    "main.js": "/static/js/main.ab245301.chunk.js",
-    "main.js.map": "/static/js/main.ab245301.chunk.js.map",
+    "main.css": "/static/css/main.1d06d425.chunk.css",
+    "main.js": "/static/js/main.bf772101.chunk.js",
+    "main.js.map": "/static/js/main.bf772101.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e1daef6b.js",
     "runtime-main.js.map": "/static/js/runtime-main.e1daef6b.js.map",
-    "static/js/2.06035eba.chunk.js": "/static/js/2.06035eba.chunk.js",
-    "static/js/2.06035eba.chunk.js.map": "/static/js/2.06035eba.chunk.js.map",
+    "static/js/2.1977b91a.chunk.js": "/static/js/2.1977b91a.chunk.js",
+    "static/js/2.1977b91a.chunk.js.map": "/static/js/2.1977b91a.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.d9ee7229073126dc6fbab39502f3fffe.js": "/precache-manifest.d9ee7229073126dc6fbab39502f3fffe.js",
+    "precache-manifest.4202a440fdbb8e4af97011edf460f530.js": "/precache-manifest.4202a440fdbb8e4af97011edf460f530.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.79ca3754.chunk.css.map": "/static/css/main.79ca3754.chunk.css.map",
-    "static/js/2.06035eba.chunk.js.LICENSE.txt": "/static/js/2.06035eba.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/static/media/Gotham-Light.23db9713.otf",
-    "static/media/logoBanane.78b8f44c.png": "/static/media/logoBanane.78b8f44c.png"
+    "static/css/main.1d06d425.chunk.css.map": "/static/css/main.1d06d425.chunk.css.map",
+    "static/js/2.1977b91a.chunk.js.LICENSE.txt": "/static/js/2.1977b91a.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/Gotham-Medium.b34a7272.otf",
+    "static/media/droite.svg": "/static/media/droite.695dc4ca.svg",
+    "static/media/droite2.svg": "/static/media/droite2.1a1cb999.svg",
+    "static/media/gauche.svg": "/static/media/gauche.9805d2a6.svg",
+    "static/media/gauche2.svg": "/static/media/gauche2.eb6bc1c0.svg",
+    "static/media/logoBanane.78b8f44c.png": "/static/media/logoBanane.78b8f44c.png",
+    "static/media/tablebois.PNG": "/static/media/tablebois.c6c0d6a5.PNG"
   },
   "entrypoints": [
     "static/js/runtime-main.e1daef6b.js",
-    "static/js/2.06035eba.chunk.js",
-    "static/css/main.79ca3754.chunk.css",
-    "static/js/main.ab245301.chunk.js"
+    "static/js/2.1977b91a.chunk.js",
+    "static/css/main.1d06d425.chunk.css",
+    "static/js/main.bf772101.chunk.js"
   ]
 }
