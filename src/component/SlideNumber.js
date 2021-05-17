@@ -13,7 +13,7 @@ class SlideNumber extends Component {
 
     if (this.props.active === 1) {
       return (
-        <div className="blackText">
+        <div className="bleueText">
          1/3
         </div>
       )
