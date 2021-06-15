@@ -254,11 +254,11 @@ class Cover1 extends Component {
         </div>
 
         <div id="" className="footer2" >
-<div id="" className="clientON"   ></div>
-<div id=""className="client2"   ></div>
-<div id=""className="client2"></div>
-<div id=""className="client2" ></div>
-<div id=""className="client2" ></div>
+<div id="" className="client2"  onClick={() => this.letsGo(1)} ></div>
+<div id=""className="client2" onClick={() => this.letsGo(2)}  ></div>
+<div id=""className="client2" onClick={() => this.letsGo(3)}></div>
+<div id=""className="client2" onClick={() => this.letsGo(4)}></div>
+<div id=""className="clientON" onClick={() => this.letsGo(5)}></div>
 </div>
 
 

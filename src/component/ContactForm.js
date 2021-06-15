@@ -1,0 +1,60 @@
+import React, { useState } from "react";
+
+const ContactForm = () => {
+  const [status, setStatus] = useState("Submit");
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("Sending...");
+    const { name, email, message } = e.target.elements;
+    let details = {
+      name: name.value,
+      email: email.value,
+      message: message.value,
+    };
+    let response = await fetch("http://localhost:5000/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json;charset=utf-8",
+      },
+      body: JSON.stringify(details),
+    });
+    setStatus("Submit");
+    let result = await response.json();
+    alert(result.status);
+  };
+  return (
+    <div>
+     <div className="texteContacting"  >info@la-banane.ca <br/> 514 712-0366
+    </div>
+    <form onSubmit={handleSubmit} className="formBody">
+     <div className="infoCOntact">
+
+     <div>
+        <label htmlFor="name">Name:</label>
+        <input type="text" id="name" required className="NameStyle" />
+      </div>
+      <div>
+        <label htmlFor="email">Email:</label>
+        <input type="email" id="email" required className="NameStyle" />
+      </div>
+
+      </div>
+ 
+     <div className="infoMessage">
+
+     <div>
+     <label htmlFor="message">Message:</label>
+        <textarea id="message" required className="messageStyle"/>
+</div>
+  
+   
+      <button type="submit" className="NameStyle bouttton">ENVOYER</button>
+      </div>
+    </form>
+
+
+    </div>
+  );
+};
+
+export default ContactForm;

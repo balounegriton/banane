@@ -42,11 +42,17 @@
   .container{
     display: flex;
     justify-content: center;
+    background-color: #FFF1C6;
+  }
+
+    
+  .container2{
+    display: flex;
+    justify-content: center;
+    background-color: #7b865d;
   }
    
-  .cover{
- 
-  }
+
   
   .logo{
     opacity: 1;
@@ -111,7 +117,9 @@
 
 /* 
   /////////////////////////////////////////////////////// {} */
-
+.width100{
+  width: 100vw
+}
 
 .grosTexte{
   
@@ -122,12 +130,40 @@
   background: red;
  width: 10vw;
 }
-.player{
-
-
-
+.infoCOntact{
+  display: flex;
+  justify-content: space-between;
 }
 
+.infoMessage{
+margin-top: 5vh;
+}
+.NameStyle {
+  color: rgb(255, 230, 154);
+  background: none;
+  border-color: rgb(255, 230, 154);
+  font-size: 3vh;
+  font-family: gotLight;
+  width: 39.5vw;
+}
+
+.messageStyle {
+  color: rgb(255, 230, 154);
+  background: none;
+  border-color: rgb(255, 230, 154);
+  font-size: 3vh;
+  font-family: gotLight;
+  width: 80vw;
+  height: 20vh;
+}
+
+.formBody{
+  width: 70vw;
+  font-family: gotLight;
+  color: rgb(255, 230, 154);
+  font-size: 3vh;
+margin-top: 5vh;
+}
 
 svg:hover {
   fill: red;
@@ -138,37 +174,38 @@ svg:hover {
    top: 50%;
 
   }
-
-  .flecheGauche{
-    
-    position: fixed;
-    top: 45%;
-    left: 2%;
-  }
-
-  
-  .flecheGaucheMobile{
-    
-    position: fixed;
-    bottom: 47px;
-    left: 24px;
-  }
-
-    
-  .flecheDroite{
-    position: fixed;
-    top: 45%;
-    right: 2%;
-    }
+.bouttton{
+margin-top: 3vh;
+}
 
     .footer{
+      display: none;
       position: fixed;
       bottom: 0%;
-    width: 100vw;
+      left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
     height: 5vh;
     color: rgb(255, 230, 154);;
     display: flex;
+    font-family: gotLight;
+    font-size: 1vw;
       }
+
+      .jcpColor{
+        color: #201F85;
+      }
+
+      .footer2{
+ 
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90vw;
+      height: 5vh;
+      display: flex;
+        }
 
       .client{
         border-style: solid;
@@ -177,11 +214,20 @@ svg:hover {
         cursor: pointer;
       }
 
-    .flecheDroiteMobile{
-      position: fixed;
-      bottom: 47px;
-      right: 24px;
+      .client2{
+   
+        width: 20vw;
+        cursor: pointer;
       }
+
+      
+      .clientON{
+        width: 20vw;
+        cursor: pointer;
+        background: #201F85;
+      }
+
+
 
     .compteur{
      display: flex;
@@ -327,20 +373,27 @@ svg:hover {
     height: 100%;
   }
   .logoLanding{
-    max-width: 60vw;
-    max-height: 60vh;
+    max-width: 50vw;
+    max-height: 50vh;
+    margin-top: -10vh;
   }
   .logoLandingMobile {
 
     height: 30vh;
     margin-top: 20vh;
 }
+.texteContact{
+  position: absolute;
+  top:14vh;
+  right: 0;
+  margin: 2%;
 
+}
  .texteDemo{
-      position: absolute;
-      bottom: 5%;
-      text-align: center;
-      width: 100%;
+  position: absolute;
+  top:7vh;
+  right: 0;
+  margin: 2%;
 
 }
 .apropos{
@@ -348,6 +401,15 @@ svg:hover {
   top:0;
   right: 0;
   margin: 2%;
+
+}
+
+.clients{
+  position: absolute;
+  top:88%;
+  left: 5%;
+
+
 
 }
 .aproposMobile{
@@ -364,6 +426,15 @@ svg:hover {
   font-family: gotBold;
   color: rgb(255, 230, 154);
 text-align: center;
+font-size: 5vh;
+display: inline-block;
+cursor: pointer;
+}
+
+.notHover2{
+  font-family: gotLight;
+  color: rgb(255, 230, 154);
+text-align: center;
 font-size: 3vh;
 display: inline-block;
 cursor: pointer;
@@ -373,7 +444,7 @@ cursor: pointer;
 .Hover{
   font-family: gotBold;
 color: rgb(0, 0, 0);
-font-size: 3vh;
+font-size: 5vh;
 text-align: center;
 display: inline-block;
 cursor: pointer;
@@ -441,19 +512,35 @@ color: rgb(0, 0, 0);
   font-size: 2.5vw;
   transition: all .2s ease-in-out;
 }
+.texteContacting{
+  font-family: gotBold;
+  color: rgb(255, 230, 154);
+ 
 
+
+  font-size: 5vw;
+}
 
 
 #texteApro:hover{
-font-size: 3.15vh;
+font-size: 5.15vh;
 transition: all .2s ease-in-out;
 }
 
 #texteDemo:hover{
-  font-size: 3.15vh;
+  font-size: 5.15vh;
   transition: all .2s ease-in-out;
 
 }
+
+#texteContact:hover{
+  font-size: 5.15vh;
+  transition: all .2s ease-in-out;
+
+}
+
+
+
 
 
 
@@ -644,9 +731,25 @@ color: #201F85;
   display: none;
 }
 
+.selection {
+  position: absolute;
+  bottom: 10%;
+right: 10%;
+}
+
+.marginT{
+  margin-top: -10vh;
+}
 
 
+.clientName{
+  text-align: center;
+  margin-top: 1vh;
+}
 
+.noDisplay{
+  display: none;
+}
 
 
 
@@ -668,23 +771,11 @@ color: #201F85;
       font-size: 10vw;
       
   }
-  .flecheGauche {
-    display: none;
-    position: fixed;
-    top: 82%;
-    left: 4%;
-  }
 
-  .flecheDroite {
-    display: none;
-    position: fixed;
-    top: 82%;
-    right: 4%;
-}
+
 .test5 {
   display: flex;
-  /* margin-top: 161px; */
-  padding-top: 20vh;
+  padding-top: 25vh;
   justify-content: center;
   align-items: flex-start;
   height: 100vh; /* Fallback for browsers that do not support Custom Properties */
@@ -693,7 +784,7 @@ color: #201F85;
 
 .texteDemo {
   position: absolute;
-  bottom: 10%;
+  bottom: 15%;
   text-align: center;
   width: 100%;
 }
@@ -758,6 +849,7 @@ color: #201F85;
 .logoLanding {
   max-width: 85vw;
   max-height: 60vh;
+  margin-top: 0vh;
 }
 
 .texteApro {
@@ -774,13 +866,15 @@ color: #201F85;
 }
 .selection{
 
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  bottom: 10%;
+  right: 4%;
 }
 .cercle {
   width: 5vw;
+}
+.marginT {
+  margin-top: 0vh;
 }
 }
 

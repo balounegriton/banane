@@ -6,19 +6,11 @@ import Cover1 from './component/Cover1.js'
 
 import Cover2 from './component/Cover2.js'
 import Cover3 from './component/Cover3.js'
-import SlideNumber from './component/SlideNumber.js';
+import Cover4 from './component/Cover4.js'
+import Cover5 from './component/Cover5.js'
 
-import {
-  BrowserView,
-  MobileView,
-  isBrowser,
-  isMobile
-} from "react-device-detect";
 
-import flecheGauche from "./image/gauche.svg";
-import flecheDroite from "./image/droite.svg";
-import flecheGauche2 from "./image/gauche2.svg";
-import flecheDroite2 from "./image/droite2.svg";
+
 
 
 
@@ -36,8 +28,7 @@ class App extends Component {
 
     this.state = {
       active: 0,
-      flecheDroite: flecheDroite,
-      flecheGauche: flecheGauche
+
 
     };
   }
@@ -45,164 +36,161 @@ class App extends Component {
 
   prev = () => { reactSwipeEl.prev() }
 
-  letsGo = (x) => { 
-    if(x === reactSwipeEl.getPos()){
+  letsGo = (x) => {
+    if (x === reactSwipeEl.getPos()) {
 
-      reactSwipeEl.slide(0 , 500) 
+      reactSwipeEl.slide(0, 500)
     }
-    else{
-      reactSwipeEl.slide(x , 500) }
-    }
-
-
-  update = () => {
-    this.setState({
-      active: reactSwipeEl.getPos()
-    }
-    )
-    if (reactSwipeEl.getPos() === 0) {
-      document.body.style.backgroundColor = "black";
-      document.getElementById("footer").style.color = "rgb(255, 230, 154)"
-      document.getElementById("001").style.background = "transparent"
-      document.getElementById("002").style.background = "transparent"
-      document.getElementById("003").style.background = "transparent"
-      document.getElementById("004").style.background = "transparent"
-      document.getElementById("005").style.background = "transparent"
-      this.setState({
-        flecheDroite: flecheDroite,
-        flecheGauche: flecheGauche
-      }
-      )
-    }
-    if (reactSwipeEl.getPos() === 1) {
-      document.body.style.backgroundColor = "#FFF1C6";
-      document.getElementById("footer").style.color = "#201F85"
-      document.getElementById("001").style.background = "#201F85"
-      document.getElementById("002").style.background = "transparent"
-      document.getElementById("003").style.background = "transparent"
-      document.getElementById("004").style.background = "transparent"
-      document.getElementById("005").style.background = "transparent"
-      this.setState({
-        flecheDroite: flecheDroite2,
-        flecheGauche: flecheGauche2,
-        
-      }
-      )
-
-    }
-    if (reactSwipeEl.getPos() === 2) {
-      document.body.style.backgroundColor = "purple";
-      document.getElementById("footer").style.color = "#201F85"
-      document.getElementById("001").style.background = "transparent"
-      document.getElementById("002").style.background = "#201F85"
-      document.getElementById("003").style.background = "transparent"
-      document.getElementById("004").style.background = "transparent"
-      document.getElementById("005").style.background = "transparent"
-      
-      this.setState({
-        flecheDroite: flecheDroite,
-        flecheGauche: flecheGauche
-      }
-      )
-    }
-    if (reactSwipeEl.getPos() === 3) {
-      document.body.style.backgroundColor = "orange";
-      document.getElementById("footer").style.color = "#201F85"
-      document.getElementById("001").style.background = "transparent"
-      document.getElementById("002").style.background = "transparent"
-      document.getElementById("003").style.background = "#201F85"
-      document.getElementById("004").style.background = "transparent"
-      document.getElementById("005").style.background = "transparent"
-      this.setState({
-        flecheDroite: flecheDroite2,
-        flecheGauche: flecheGauche2
-      }
-      )
-    }
-    if (reactSwipeEl.getPos() === 4) {
-      document.body.style.backgroundColor = "rgb(236, 163, 163)";
-      document.getElementById("footer").style.color = "#201F85"
-      document.getElementById("001").style.background = "transparent"
-      document.getElementById("002").style.background = "transparent"
-      document.getElementById("003").style.background = "transparent"
-      document.getElementById("004").style.background = "#201F85"
-      document.getElementById("005").style.background = "transparent"
-      this.setState({
-        flecheDroite: flecheDroite2,
-        flecheGauche: flecheGauche2
-      }
-      )
-    }
-    if (reactSwipeEl.getPos() === 5) {
-      document.body.style.backgroundColor = "chartreuse";
-      document.getElementById("footer").style.color = "#201F85"
-      document.getElementById("001").style.background = "transparent"
-      document.getElementById("002").style.background = "transparent"
-      document.getElementById("003").style.background = "transparent"
-      document.getElementById("004").style.background = "transparent"
-      document.getElementById("005").style.background = "#201F85"
-      this.setState({
-        flecheDroite: flecheDroite2,
-        flecheGauche: flecheGauche2
-      }
-      )
+    else {
+      reactSwipeEl.slide(x, 500)
     }
   }
 
 
+  update = () => {
+if(reactSwipeEl.getPos()===0){
+  document.getElementById("footer").className = "footer "
+}
+if(reactSwipeEl.getPos()===1){
+  document.getElementById("footer").className = "footer jcpColor"
+}
+if(reactSwipeEl.getPos()===2){
+  document.getElementById("footer").className = "footer jcpColor"
+}
+if(reactSwipeEl.getPos()===3){
+  document.getElementById("footer").className = "footer jcpColor"
+}
+if(reactSwipeEl.getPos()===4){
+  document.getElementById("footer").className = "footer jcpColor"
+}
+if(reactSwipeEl.getPos()===5){
+  document.getElementById("footer").className = "footer jcpColor"
+}
+    this.setState({
+      active: reactSwipeEl.getPos()
+    }
+    )
+
+  }
+
+  client1 = () => {
+    if (this.state.active !== 1) {
+      document.getElementById("0001").className = "clientName"
+    }
+
+  }
+
+  client1Off = () => {
+    document.getElementById("0001").className = " noDisplay"
+  }
+
+  client2 = () => {
+    if (this.state.active !== 2) {
+      document.getElementById("0002").className = "clientName"
+    }
+
+  }
+
+  client2Off = () => {
+    document.getElementById("0002").className = " noDisplay"
+  }
+
+  client3 = () => {
+    if (this.state.active !== 3) {
+      document.getElementById("0003").className = "clientName"
+    }
+
+  }
+
+  client3Off = () => {
+    document.getElementById("0003").className = " noDisplay"
+  }
+  client4 = () => {
+    if (this.state.active !== 4) {
+      document.getElementById("0004").className = "clientName"
+    }
+
+  }
+
+  client4Off = () => {
+    document.getElementById("0004").className = " noDisplay"
+  }
+  client5 = () => {
+    if (this.state.active !== 5) {
+      document.getElementById("0005").className = "clientName"
+    }
+
+  }
+
+  client5Off = () => {
+    document.getElementById("0005").className = " noDisplay"
+  }
 
   render() {
     return (
- 
-        <div className="App">
 
-<div>
-  <ReactSwipe
-    swipeOptions={{
-      continuous: true,
-      callback: this.update,
-    }}
-    ref={el => (reactSwipeEl = el)}  >
+      <div className="App">
 
-
-    <div ><Cover0 dataFromParent = {this.state.active}/></div>
-    <div ><Cover1 dataFromParent = {this.state.active}/></div>
-    <div ><Cover1 dataFromParent = {this.state.active}/></div>
-    <div ><Cover1 dataFromParent = {this.state.active}/></div>
-    <div ><Cover1 dataFromParent = {this.state.active}/></div>
-    <div ><Cover1 dataFromParent = {this.state.active}/></div>
-
-  </ReactSwipe>
+        <div >
+          <ReactSwipe
+            className="width100"
+            swipeOptions={{
+              continuous: true,
+              disableScroll: false,
+              callback: this.update,
+            }}
+            ref={el => (reactSwipeEl = el)}  >
 
 
-</div>
+            <div className="width100"><Cover0 className="width100" dataFromParent={this.state.active} /></div>
+            <div className="width100"><Cover1 className="width100" dataFromParent={this.state.active} /></div>
+            <div className="width100"><Cover2 className="width100" dataFromParent={this.state.active} /></div>
+            <div className="width100"><Cover3 className="width100" dataFromParent={this.state.active} /></div>
+            <div className="width100"><Cover4 className="width100" dataFromParent={this.state.active} /></div>
+            <div className="width100"><Cover5 className="width100" dataFromParent={this.state.active} /></div>
+
+          </ReactSwipe>
 
 
-
-<div className="flecheGauche" >
-
-  <img id="gauche"  src={this.state.flecheGauche} alt="cover" onClick={this.prev} />
-  <div className="compteur"> <SlideNumber active={this.state.active} /></div>
-</div>
+        </div>
 
 
 
 
-<div className="flecheDroite"  >
 
-  <img id="droite"  src={this.state.flecheDroite} alt="cover" onClick={this.next} />
-  <div className="compteur"> <SlideNumber active={this.state.active} /> </div>
-</div>
 
-<div id="footer" className="footer" >
-<div id="001" className="client"  onClick={() => this.letsGo(1)} ></div>
-<div id="002"className="client" onClick={() => this.letsGo(2)}  ></div>
-<div id="003"className="client" onClick={() => this.letsGo(3)}></div>
-<div id="004"className="client" onClick={() => this.letsGo(4)}></div>
-<div id="005"className="client" onClick={() => this.letsGo(5)}></div>
-</div>
 
-</div>
+
+
+        <div id="footer" className="footer" >
+          <div id="001" className="client" onClick={() => this.letsGo(1)} onMouseEnter={this.client1} onMouseLeave={this.client1Off}  >
+            <div id="0001" className="clientName noDisplay">
+              JCPerrault
+            </div>
+          </div>
+          <div id="002" className="client" onClick={() => this.letsGo(2)} onMouseEnter={this.client2} onMouseLeave={this.client2Off} >
+          <div id="0002" className="clientName noDisplay">
+              Adrien Gagnon
+            </div>
+          </div>
+          <div id="003" className="client" onClick={() => this.letsGo(3)} onMouseEnter={this.client3} onMouseLeave={this.client3Off}>
+          <div id="0003" className="clientName noDisplay">
+              sentier de l est
+            </div>
+          </div>
+          <div id="004" className="client" onClick={() => this.letsGo(4)} onMouseEnter={this.client4} onMouseLeave={this.client4Off}>
+          <div id="0004" className="clientName noDisplay">
+             Pneu select
+            </div>
+          </div>
+          <div id="005" className="client" onClick={() => this.letsGo(5)} onMouseEnter={this.client5} onMouseLeave={this.client5Off}>
+          <div id="0005" className="clientName noDisplay">
+            station 22
+            </div>
+          </div>
+        </div>
+
+      </div>
 
 
 
