@@ -4,11 +4,11 @@ import ReactSwipe from 'react-swipe';
 import Cover0 from './component/Cover0.js'
 import Cover1 from './component/Cover1.js'
 
+
 import Cover2 from './component/Cover2.js'
 import Cover3 from './component/Cover3.js'
 import Cover4 from './component/Cover4.js'
 import Cover5 from './component/Cover5.js'
-
 
 
 
@@ -28,10 +28,13 @@ class App extends Component {
 
     this.state = {
       active: 0,
+      go:true,
 
 
     };
   }
+
+
   next = () => { reactSwipeEl.next() }
 
   prev = () => { reactSwipeEl.prev() }
@@ -55,16 +58,16 @@ if(reactSwipeEl.getPos()===1){
   document.getElementById("footer").className = "footer jcpColor"
 }
 if(reactSwipeEl.getPos()===2){
-  document.getElementById("footer").className = "footer jcpColor"
+  document.getElementById("footer").className = "footer AGcolor"
 }
 if(reactSwipeEl.getPos()===3){
-  document.getElementById("footer").className = "footer jcpColor"
+  document.getElementById("footer").className = "footer SDL"
 }
 if(reactSwipeEl.getPos()===4){
-  document.getElementById("footer").className = "footer jcpColor"
+  document.getElementById("footer").className = "footer  Pneu"
 }
 if(reactSwipeEl.getPos()===5){
-  document.getElementById("footer").className = "footer jcpColor"
+  document.getElementById("footer").className = "footer stacolor"
 }
     this.setState({
       active: reactSwipeEl.getPos()
@@ -127,11 +130,19 @@ if(reactSwipeEl.getPos()===5){
   }
 
   render() {
+   
+
+   
+   
+   
+   
+
     return (
 
       <div className="App">
 
         <div >
+       
           <ReactSwipe
             className="width100"
             swipeOptions={{
@@ -165,7 +176,7 @@ if(reactSwipeEl.getPos()===5){
         <div id="footer" className="footer" >
           <div id="001" className="client" onClick={() => this.letsGo(1)} onMouseEnter={this.client1} onMouseLeave={this.client1Off}  >
             <div id="0001" className="clientName noDisplay">
-              JCPerrault
+              JCPerreault
             </div>
           </div>
           <div id="002" className="client" onClick={() => this.letsGo(2)} onMouseEnter={this.client2} onMouseLeave={this.client2Off} >
@@ -175,7 +186,7 @@ if(reactSwipeEl.getPos()===5){
           </div>
           <div id="003" className="client" onClick={() => this.letsGo(3)} onMouseEnter={this.client3} onMouseLeave={this.client3Off}>
           <div id="0003" className="clientName noDisplay">
-              sentier de l est
+              Sentiers de l&rsquo;est
             </div>
           </div>
           <div id="004" className="client" onClick={() => this.letsGo(4)} onMouseEnter={this.client4} onMouseLeave={this.client4Off}>
@@ -194,8 +205,8 @@ if(reactSwipeEl.getPos()===5){
 
 
 
-    )
-  }
+    )}
+  
 }
 
 export default App;

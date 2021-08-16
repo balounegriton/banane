@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
 import ReactPlayer from 'react-player/vimeo'
-import cercle_plien from "../image/cercle_plien.png";
-import cercle_vide from "../image/cercle_vide.png";
+
 import table from "../image/tablebois.jpg";
 import paliser from "../image/paliser.jpg";
 import cactus from "../image/cactus.jpg";
@@ -13,9 +12,7 @@ class Cover1 extends Component {
       jcp1: true,
       jcp2: false,
       jcp3: false,
-      cercle1:cercle_plien,
-      cercle2:cercle_vide,
-      cercle3:cercle_vide,
+
       playing1:false,
       playing2:false,
       playing3:false,
@@ -72,10 +69,7 @@ class Cover1 extends Component {
       jcp1: true,
       jcp2: false,
       jcp3: false,
-      cercle1:cercle_plien,
-      cercle2:cercle_vide,
-      cercle3:cercle_vide,
-  
+
       playing2:false,
       playing3:false,
     }
@@ -89,9 +83,7 @@ class Cover1 extends Component {
       jcp1: false,
       jcp2: true,
       jcp3: false,
-      cercle1:cercle_vide,
-      cercle2:cercle_plien,
-      cercle3:cercle_vide,
+ 
       playing1:false,
       playing3:false,
     }
@@ -105,9 +97,7 @@ class Cover1 extends Component {
       jcp1: false,
       jcp2: false,
       jcp3: true,
-      cercle1:cercle_vide,
-      cercle2:cercle_vide,
-      cercle3:cercle_plien,
+
       playing1:false,
       playing2:false,
 
@@ -128,7 +118,7 @@ class Cover1 extends Component {
           <div className="centerAll"   >
             <div className="marginT "   >
             <hr className="lineSplit"/>
-            <div className="JcpName "   >JCPERRAULT</div>
+            <div className="JcpName "   >JCPERREAULT</div>
             <hr className="lineSplit"/>
 
 
@@ -140,7 +130,7 @@ class Cover1 extends Component {
                   <div  
                   
                   
-                  className="test33" onClick={this.jcp3}> 
+                  className="test33" onClick={this.jcp3} onMouseEnter={this.jcp3}> 
                   
                   <img id="" className="imgCover" src={cactus} alt="cover"  />
                   </div>
@@ -148,6 +138,7 @@ class Cover1 extends Component {
                   onPlay={this.play3}
                   controls={true}
                   playing={this.state.playing3}
+                  playsinline={true}
                   id="vid3"
                   className="test3 displayNo"
                   url='https://vimeo.com/540287695'
@@ -163,7 +154,7 @@ class Cover1 extends Component {
 
                 <div className="largeScreen2">
                   <div className="test2 ">
-                  <div   className="test33" onClick={this.jcp2}>
+                  <div   className="test33" onClick={this.jcp2} onMouseEnter={this.jcp2}>
                   <img id="" className="imgCover" src={paliser} alt="cover"  />
                     </div>
                 
@@ -171,6 +162,7 @@ class Cover1 extends Component {
                   onPlay={this.play2}
                   controls={true}
                   playing={this.state.playing2}
+                  playsinline={true}
                   id="vid2"
                   className="test3 displayNo"
                   url='https://vimeo.com/540295699'
@@ -182,15 +174,16 @@ class Cover1 extends Component {
 
                 <div className="largeScreen3">
                   <div className="test2">
-                 <div   className="test33" onClick={this.jcp1}>
+                 <div   className="test33 " onClick={this.jcp1} onMouseEnter={this.jcp1}>
                   <img id="" className="imgCover" src={table} alt="cover"  />
                     </div>
                     <ReactPlayer
                   onPlay={this.play1}
                   controls={true}
+                  playsinline={true}
                   playing={this.state.playing1}
                   id="vid1"
-                  className="test3"
+                  className="test3 displayNo"
                   url='https://vimeo.com/540310664'
                  width='100%'
                  height='100%'
@@ -204,48 +197,38 @@ class Cover1 extends Component {
 
                 {this.state.jcp1 &&
                   <div>
-                    <div className="titreJcp"  >Commandite Star Académie
+                    <div className="titre Jcp"  >Commandite Star Académie
                    
 
              </div>
-                    <div className="texteJcp"  >
+                    <div className="texte Jcp"  >
                        Montage vidéo à partir donner un peu plus de qualité, nous avons ajouté de l’animation/effets dans certaines images pour rendre le tout plus dynamique.
                          </div>
                   </div>}
 
                 {this.state.jcp2 &&
                     <div>
-                    <div className="titreJcp"  >Palliser 
+                    <div className="titre Jcp"  >Palliser 
                    
 
              </div>
-                <div className="texteJcp"  >Montage vidéo à partir d’images fixes (photos) fournies par le client. Pour donner un peu plus de qualité, nous avons ajouté de l’animation/effets dans certaines images pour rendre le tout plus dynamique.
+                <div className="texte Jcp"  >Montage vidéo à partir d’images fixes (photos) fournies par le client. Pour donner un peu plus de qualité, nous avons ajouté de l’animation/effets dans certaines images pour rendre le tout plus dynamique.
              </div>
              </div>}
            
 
 
                 {this.state.jcp3 &&     <div>
-                    <div className="titreJcp"  >Natuzzi (Remontage 30s)
+                    <div className="titre Jcp"  >Natuzzi (Remontage 30s)
                    
 
              </div>
-                <div className="texteJcp"  >Nous avons été mandaté de produire une publicité 30s à partir d’une vidéo existante de 55 secondes. Nous avons dû recréer une histoire à partir d’images existantes et créer une ambiance qui fait rêver avec des effets sonores.
+                <div className="texte Jcp"  >Nous avons été mandaté de produire une publicité 30s à partir d’une vidéo existante de 55 secondes. Nous avons dû recréer une histoire à partir d’images existantes et créer une ambiance qui fait rêver avec des effets sonores.
              </div>
              </div>}
 
 
 </div>     </div>
-<div className="selection">
-
-                <div className="numberContainer">
-
-                  <div id="jcp1" className="numb" onClick={this.jcp1} >  <img id="" className="cercle" src={this.state.cercle1} alt="cover" /> </div>
-                  <div id="jcp2" className="numb" onClick={this.jcp2} >  <img id="" className="cercle" src={this.state.cercle2} alt="cover" /> </div>
-                  <div id="jcp3" className="numb" onClick={this.jcp3}> <img id="" className="cercle" src={this.state.cercle3} alt="cover" /> </div>
-
-                </div>
-              </div>
 
 
 

@@ -1,18 +1,31 @@
 import React, { Component } from 'react';
 import '../App.css';
+import ReactPlayer from 'react-player'
 
-import logoJcp from "../image/logojcp.png";
-
+import table from "../image/tablebois.jpg";
+import paliser from "../image/paliser.jpg";
+import cactus from "../image/cactus.jpg";
 class Cover1Mobile extends Component {
   constructor() {
     super();
     this.state = {
-      jcp1: true
+      jcp1: true,
+      jcp2: false,
+      jcp3: false,
+
+ 
     };
   }
+  componentDidUpdate= () => {  
+
+   }
+
   allo = () => {
     this.props.actionName()
   }
+
+
+
 
 
 
@@ -23,32 +36,34 @@ class Cover1Mobile extends Component {
       jcp3: false,
     }
     )
-    document.getElementById("jcp1M").className = "numbM"
-    document.getElementById("jcp2M").className = "numbOffM"
-    document.getElementById("jcp3M").className = "numbOffM"
+    document.getElementById("vid1").className = "test3"
+    document.getElementById("vid2").className = "test3 displayNo"
+    document.getElementById("vid3").className = "test3 displayNo"
   }
   jcp2 = () => {
     this.setState({
       jcp1: false,
       jcp2: true,
       jcp3: false,
+
     }
     )
-    document.getElementById("jcp1M").className = "numbOffM"
-    document.getElementById("jcp2M").className = "numbM"
-    document.getElementById("jcp3M").className = "numbOffM"
+    document.getElementById("vid1").className = "test3 displayNo"
+    document.getElementById("vid2").className = "test3 "
+    document.getElementById("vid3").className = "test3 displayNo"
   }
   jcp3 = () => {
     this.setState({
       jcp1: false,
       jcp2: false,
       jcp3: true,
+
+
     }
     )
-    document.getElementById("jcp1M").className = "numbOffM"
-    document.getElementById("jcp2M").className = "numbOffM"
-    document.getElementById("jcp3M").className = "numbM"
-
+    document.getElementById("vid1").className = "test3 displayNo"
+    document.getElementById("vid2").className = "test3 displayNo"
+    document.getElementById("vid3").className = "test3"
   }
 
 
@@ -58,95 +73,133 @@ class Cover1Mobile extends Component {
       <div className="container white">
         <div className="box2 "   >
 
-          <div className="centerAllMobile"   >
-            <div className=" "   >
-              <img id="jcp" className="logoJcp" src={logoJcp} alt="logo" />
+          <div className="centerAll"   >
+            <div className="marginT "   >
+            <hr className="lineSplit"/>
+            <div className="JcpName "   >JCPERREAULT</div>
+            <hr className="lineSplit"/>
+
 
               <div className="containerTextVideo">
-                <div className="largeScreen">
+
+
+                <div className="boxSize">
                   <div className="test2">
-
-                    {this.state.jcp1 &&
-                    
-               
-
-                    <iframe
-                      className="test3"
-                      src="https://player.vimeo.com/video/540310664?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                      frameBorder="0"
-                      allow="autoplay; fullscreen; picture-in-picture"
-                      allowFullScreen title="demo v333">
-                    </iframe>}
-
-                    {this.state.jcp2 && <iframe
-                      className="test3"
-                      src="https://player.vimeo.com/video/540295699?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                      frameBorder="0"
-                      allow="autoplay; fullscreen; picture-in-picture"
-                      allowFullScreen title="demo v333">
-                    </iframe>
-                    
- 
-                    }
-
-
-                    {this.state.jcp3 && <iframe
-                      className="test3"
-                      src="https://player.vimeo.com/video/540287695?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                      frameBorder="0"
-                      allow="autoplay; fullscreen; picture-in-picture"
-                      allowFullScreen title="demo v333">
-                    </iframe>}
-
+                  <div  
+                  
+                  
+                  className="test33" onClick={this.jcp3}> 
+                  
+                  <img id="" className="imgCover" src={cactus} alt="cover"  />
                   </div>
-                  <div className="numberContainerMobile">
+                  <ReactPlayer
 
-                    <div id="jcp1M" className="numbM" onClick={this.jcp1} >1  </div>
-                    <div id="jcp2M" className="numbOffM" onClick={this.jcp2} >2  </div>
-                    <div id="jcp3M" className="numbOffM" onClick={this.jcp3}>3  </div>
+                  controls={true}
+                  playsinline={true}
+                  id="vid3"
+                  className="test3 "
+                  url='https://vimeo.com/540287695'
+                 width='100%'
+                 height='100%'
+                 />
+      
+                 </div>
 
+
+                </div>
+
+
+                <div className="largeScreen2">
+                  <div className="test2 ">
+                  <div   className="test33" onClick={this.jcp2} >
+                  <img id="" className="imgCover" src={paliser} alt="cover"  />
+                    </div>
+                
+                    <ReactPlayer
+             
+                  controls={true}
+                  playsinline={true}
+                  id="vid2"
+                  className="test3"
+                  url='https://vimeo.com/540295699'
+                 width='100%'
+                 height='100%'
+                 />
                   </div>
                 </div>
 
-                {this.state.jcp1 &&     <div>
-                    <div className="titreJcpMobile"  >Commandite Star Académie
+                <div className="largeScreen3">
+                  <div className="test2">
+                 <div   className="test33 " onClick={this.jcp1} >
+                  <img id="" className="imgCover" src={table} alt="cover"  />
+                    </div>
+                    <ReactPlayer
+          
+                  controls={true}
+                  playsinline={true}
+                  id="vid1"
+                  className="test3 "
+                  url='https://vimeo.com/540310664'
+                 width='100%'
+                 height='100%'
+                 />
+                    </div>
+                </div>
+
+
+
+                <div>
+
+                {this.state.jcp1 &&
+                  <div>
+                    <div className="titre Jcp"  >Commandite Star Buin Académie
                    
 
              </div>
-                    <div className="texteJcpMobile"  >
-                      Conceptualisation, tournage et montage de 5 messages (10s) pour la commandite de Star Académie. Nous avons travaillé sur un jeu de lumière et d’ombrage pour ce concept.
-</div>
+                    <div className="texte Jcp"  >
+                       Montage vidéo à partir donner un peu plus de qualité, nous avons ajouté de l’animation/effets dans certaines images pour rendre le tout plus dynamique.
+                         </div>
                   </div>}
 
-                {this.state.jcp2 && <div>
-                    <div className="titreJcpMobile"  >Palliser 
-
-             </div>
-                    <div className="texteJcpMobile"  >
-                    Montage vidéo à partir d’images fixes (photos) fournies par le client. Pour donner un peu plus de qualité, nous avons ajouté de l’animation/effets dans certaines images pour rendre le tout plus dynamique.
-</div>
-                  </div>}
-
-
-                {this.state.jcp3 && <div>
-                    <div className="titreJcpMobile"  >Natuzzi (Remontage 30s)
+                {this.state.jcp2 &&
+                    <div>
+                    <div className="titre Jcp"  >Palliser 
                    
 
              </div>
-                    <div className="texteJcpMobile"  >
-                    Nous avons été mandaté de produire une publicité 30s à partir d’une vidéo existante de 55 secondes. Nous avons dû recréer une histoire à partir d’images existantes et créer une ambiance qui fait rêver avec des effets sonores.
-</div>
-                  </div>}
+                <div className="texte Jcp"  >Montage vidéo à partir d’images fixes (photos) fournies par le client. Pour donner un peu plus de qualité, nous avons ajouté de l’animation/effets dans certaines images pour rendre le tout plus dynamique.
+             </div>
+             </div>}
+           
 
 
+                {this.state.jcp3 &&     <div>
+                    <div className="titre Jcp"  >Natuzzi (Remontage 30s)
+                   
 
-              </div>
+             </div>
+                <div className="texte Jcp"  >Nous avons été mandaté de produire une publicité 30s à partir d’une vidéo existante de 55 secondes. Nous avons dû recréer une histoire à partir d’images existantes et créer une ambiance qui fait rêver avec des effets sonores.
+             </div>
+             </div>}
+
+
+</div>     </div>
 
 
 
             </div>
           </div>
         </div>
+
+        <div id="" className="footer2" >
+<div id="" className="clientON"   ></div>
+<div id=""className="client2"   ></div>
+<div id=""className="client2"></div>
+<div id=""className="client2" ></div>
+<div id=""className="client2" ></div>
+</div>
+
+
       </div>
     )
   }

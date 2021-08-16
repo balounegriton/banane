@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import '../App.css';
 import logo from "../image/logoBanane.png";
-import ReactPlayer from 'react-player/vimeo';
+import ReactPlayer from 'react-player/lazy';
 import ContactForm from './ContactForm';
 
 
-class Cover0Mobile extends Component {
+class Cover0 extends Component {
   constructor() {
     super();
     this.state = {
@@ -25,6 +25,7 @@ class Cover0Mobile extends Component {
       }
       )
     }
+
   }
   playDemo = () => {
     this.setState({
@@ -50,7 +51,7 @@ class Cover0Mobile extends Component {
       )
 
       document.getElementById("texteDemo").className = "notHover"
-      document.getElementById("demoBox").className = "test4 displayNo"
+      document.getElementById("demoBox").className = "test4 displayNone"
     }
 
     if (this.state.demo === false && this.state.apropos === true && this.state.logo === false && this.state.contact === false ) {
@@ -114,7 +115,7 @@ class Cover0Mobile extends Component {
       )
       document.getElementById("texteContact").className = "Hover"
       document.getElementById("texteDemo").className = "notHover"
-      document.getElementById("demoBox").className = "test4 displayNo"
+      document.getElementById("demoBox").className = "test4 displayNone"
     }
 
     if (this.state.demo === false && this.state.apropos === true && this.state.logo === false && this.state.contact === false) {
@@ -176,7 +177,7 @@ class Cover0Mobile extends Component {
 
       document.getElementById("texteApro").className = "Hover"
       document.getElementById("texteDemo").className = "notHover"
-      document.getElementById("demoBox").className = "test4 displayNo"
+      document.getElementById("demoBox").className = "test4 displayNone"
       this.setState({
         playing: false,
       }
@@ -194,7 +195,7 @@ class Cover0Mobile extends Component {
       )
 
       document.getElementById("texteDemo").className = "notHover"
-      document.getElementById("demoBox").className = "test4 displayNo"
+      document.getElementById("demoBox").className = "test4 displayNone"
       document.getElementById("texteApro").className = "notHover"
       this.setState({
         playing: false,
@@ -258,7 +259,7 @@ class Cover0Mobile extends Component {
       <div className="box2">
         <div className="test5">
 
-          <div id="demoBox" className="test4 displayNo">
+          <div id="demoBox" className="test4 displayNone">
             <div className="test2">
 
 
@@ -269,6 +270,7 @@ class Cover0Mobile extends Component {
                 playing={this.state.playing}
                 id="vidDemo"
                 className="test3"
+                playsinline={true}
                 url='https://vimeo.com/403432891'
                 width='100%'
                 height='100%'
@@ -309,12 +311,14 @@ class Cover0Mobile extends Component {
         </div>
 
         <div className="clients">
-          <div id="texteClients" className="notHover2"  onMouseEnter={this.clients} onMouseLeave={this.clientsOff} >clients </div>
+          <div id="texteClients" className="notHover2" onClick={this.testing} onMouseEnter={this.clients} onMouseLeave={this.clientsOff} >clients </div>
         </div>
-
+        <div className="swipe">
+          Swipe for project
+        </div>
       </div>
 
     )
   }
 }
-export default Cover0Mobile;
+export default Cover0;

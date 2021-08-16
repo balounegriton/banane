@@ -12,7 +12,10 @@
     src: url(Gotham-Light.otf);
   } 
   /* ////////////////////////// */
-
+.resize{
+  height: 100vh;
+  background-color: red;
+}
 
   body{
     background: black;
@@ -42,16 +45,21 @@
   .container{
     display: flex;
     justify-content: center;
-    background-color: #FFF1C6;
+    background-color: #ffffff;
   }
 
-    
+
   .container2{
     display: flex;
     justify-content: center;
-    background-color: #7b865d;
+    background-color: #ffffff;
   }
-   
+
+  .container3{
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+  }
 
   
   .logo{
@@ -80,12 +88,7 @@
     transition: opacity 0.5s ease-in-out;
   }
   
-  .texte{
-    font-family: gotBold;
-    color: white;
-    position: absolute;
-    margin-top: -10vh;
-  }
+
   
   .texte2{
     font-family: gotLight;
@@ -193,7 +196,7 @@ margin-top: 3vh;
       }
 
       .jcpColor{
-        color: #201F85;
+          color: #DA2129;
       }
 
       .footer2{
@@ -224,10 +227,30 @@ margin-top: 3vh;
       .clientON{
         width: 20vw;
         cursor: pointer;
-        background: #201F85;
+        background: #DA2129;
       }
 
-
+      .clientONAG{
+        width: 20vw;
+        cursor: pointer;
+        background: #317731;
+      }
+      .clientONsta{
+        width: 20vw;
+        cursor: pointer;
+        background: orange;
+      }
+      
+      .clientONSDL{
+        width: 20vw;
+        cursor: pointer;
+        background:  rgb(249, 191, 19);
+      }
+      .clientONPneu{
+        width: 20vw;
+        cursor: pointer;
+        background:   #31312E;
+      }
 
     .compteur{
      display: flex;
@@ -496,7 +519,7 @@ rgb(255, 230, 154) 2px -2px;
 
 .bleueText{
 
-  color: #201F85;
+    color: #DA2129;
   }
 .blackText{
 
@@ -581,19 +604,36 @@ transition: all .2s ease-in-out;
 
   }
 
-  .texteJcp {
+  .texte {
     font-family: gotLight;
-    color: #201F85;
+
     text-align: justify;
     text-justify: inter-word;
     width: 28vw;
     font-size: 2vw;
     
 }
+.Jcp{
+    color: #DA2129;
+}
+.SDL{
+  color: rgb(249, 191, 19);
+}
 
-.titreJcp{
+.Pneu{
+  color:  #31312E;
+}
+
+.AGcolor{
+  color: #317731;
+}
+
+.stacolor{
+  color: orange;
+}
+.titre{
   font-family: gotBold;
-  color: #201F85;
+
   width: 28vw;
   font-size: 1.8vw;
   
@@ -618,6 +658,11 @@ margin-top: 18vh
 }
 
 
+.largeScreen333 {
+  width: 27vw;
+
+margin-top: 5vh
+}
 
 
 
@@ -699,27 +744,72 @@ height: calc(var(--vh, 1vh) * 100);
   margin-bottom: 10vh;
 }
 
-.swipe{
-text-align: center;
-  color: rgb(255, 230, 154);
-  font-size: 4vw;
-}
-
-
 .JcpName{
 font-family:gotBold ;
 font-size: 10vw;
-color: #201F85;
+  color: #DA2129;
+  text-align: center;
 }
+.SDLName{
+  font-family:gotBold ;
+  font-size: 9vw;
+  color: rgb(249, 191, 19);
+  text-align: center;
+  }
 
+  .PneuName{
+    font-family:gotBold ;
+    font-size: 9vw;
+    color:  #31312E;
+    text-align: center;
+    }
+.AGName{
+  font-family:gotBold ;
+  font-size: 10vw;
+  color: #317731;
+  text-align: center;
+  }
+
+  .staName{
+    font-family:gotBold ;
+    font-size: 10vw;
+    color: orange;
+    text-align: center;
+    }
 
 .lineSplit{
   height:2px;
   border-width:0;
-  color:#201F85;
-  background-color:#201F85;
+  color:#D83C2D;
+  background-color:#D83C2D;
   }
-  
+
+  .lineSplit2{
+    height:2px;
+    border-width:0;
+    color: #317731;
+    background-color: #317731;
+    }
+    .lineSplit3{
+      height:2px;
+      border-width:0;
+      color:  rgb(249, 191, 19);
+      background-color: rgb(249, 191, 19);
+      }
+
+      .lineSplit4{
+        height:2px;
+        border-width:0;
+        color:  #31312E;
+        background-color:  #31312E;
+        }
+
+        .lineSplit5{
+          height:2px;
+          border-width:0;
+          color:  orange;
+          background-color:  orange;
+          }
   .imgCover{  
     width: inherit;
   }
@@ -731,11 +821,33 @@ color: #201F85;
   display: none;
 }
 
+.displayNone{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
 .selection {
+  display: none;
   position: absolute;
   bottom: 10%;
 right: 10%;
 }
+
+
+
+
+
+
+
+
+
 
 .marginT{
   margin-top: -10vh;
@@ -752,14 +864,9 @@ right: 10%;
 }
 
 
-
-
-
-
-
-
-
-
+.swipe{
+  display: none;
+}
 
 
 
@@ -772,6 +879,56 @@ right: 10%;
       
   }
 
+  .AGName {
+    font-size: 10vw;
+    
+}
+  .texteContact {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    margin: 2%;
+}
+
+.SDLName {
+  font-size: 9vw;
+}
+.messageStyle {
+  color: rgb(255, 230, 154);
+  background: none;
+  border-color: rgb(255, 230, 154);
+  font-size: 3vh;
+  font-family: gotLight;
+  width: initial;
+  height: 15vh;
+}
+  .texteDemo {
+    position: absolute;
+    top: 4vh;
+    right: 0;
+    margin: 2%;
+}
+  #texteApro:hover{
+    font-size: 3vh;
+    }
+    
+    #texteDemo:hover{
+      font-size: 3vh;
+      
+    }
+    
+    #texteContact:hover{
+      font-size: 3vh;
+  
+    }
+.clients{
+  display: none;
+}
+.footer{
+  display: none;
+}.footer2{
+  display: none;
+}
 
 .test5 {
   display: flex;
@@ -782,12 +939,47 @@ right: 10%;
   height: calc(var(--vh, 1vh) * 100);
 }
 
-.texteDemo {
-  position: absolute;
-  bottom: 15%;
+
+.swipe{
+  display: block;
   text-align: center;
-  width: 100%;
+    color: rgb(255, 230, 154);
+    font-size: 4vw;
+    position: absolute;
+    bottom: 20px;
+    left:0;
+    right: 0;
+    font-family: gotLight;
+  }
+  .texteContacting {
+    font-family: gotBold;
+    color: rgb(255, 230, 154);
+    font-size: 5vw;
+    position: absolute;
+    bottom: 10vh;
+    right: 20px;
+    text-align: end;
 }
+  .infoCOntact {
+    display: table-caption;
+  
+  }
+
+  .notHover {
+    font-size: 3vh;
+  }
+  .Hover {
+    font-size: 3vh;
+  }
+  
+  .formBody {
+    width: 70vw;
+    font-family: gotLight;
+    color: rgb(255, 230, 154);
+    font-size: 3vh;
+    margin-top: -5vh;
+  }
+  
 
 .containerTextVideo {
   display: flex;
@@ -798,22 +990,24 @@ right: 10%;
   width: 90vw;
 }
 
-.texteJcp {
+.texte {
   font-family: gotLight;
-  color: #201F85;
+
   text-align: justify;
   text-justify: inter-word;
-  width: 75vw;
+  width: 95vw;
   font-size: 4vw;
 }
 
-.titreJcp {
+.titre {
   margin-top: 5vh;
   font-family: gotBold;
-  color: #201F85;
+
   width: 75vw;
   font-size: 5vw;
 }
+
+
 
 .largeScreen3 {
   width: 55vw;
@@ -825,6 +1019,11 @@ right: 10%;
   width: 55vw;
   margin-left: 0vw;
   margin-top: -7vh;
+}
+.largeScreen333 {
+  width: 90vw;
+
+margin-top: 0vh
 }
 .boxSize {
   margin-left: 35vw;
@@ -868,6 +1067,12 @@ right: 10%;
 
   position: absolute;
   bottom: 10%;
+  right: 4%;
+}
+
+.selection {
+  position: absolute;
+  bottom: 5px;
   right: 4%;
 }
 .cercle {
