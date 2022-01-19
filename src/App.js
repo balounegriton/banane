@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-import logo from "./image/logoBanane.png";
 
 
+import Logo from "./component/logo.js";
+import Demo from "./component/demo.js";
+import Contact from './component/contact';
+import Apropo from './component/apropo';
 
-class Cover0 extends Component {
+class App extends Component {
   constructor() {
     super();
     this.state = {
@@ -12,12 +15,8 @@ class Cover0 extends Component {
       apropos: false,
       logo: true,
       contact: false
-
-
     };
   }
-
-
 
   demoReel = () => {
 
@@ -36,7 +35,7 @@ class Cover0 extends Component {
       )
 
       document.getElementById("texteDemo").className = "notHover"
-      document.getElementById("demoBox").className = "test4 displayNone"
+
     }
 
     if (this.state.demo === false && this.state.apropos === true && this.state.logo === false && this.state.contact === false) {
@@ -50,7 +49,7 @@ class Cover0 extends Component {
 
       document.getElementById("texteDemo").className = "Hover"
       document.getElementById("texteApro").className = "notHover"
-      document.getElementById("demoBox").className = "test4 "
+
     }
     if (this.state.demo === false && this.state.apropos === false && this.state.logo === true && this.state.contact === false) {
       this.setState({
@@ -62,7 +61,7 @@ class Cover0 extends Component {
       )
 
       document.getElementById("texteDemo").className = "Hover"
-      document.getElementById("demoBox").className = "test4"
+
 
     }
     if (this.state.demo === false && this.state.apropos === false && this.state.logo === false && this.state.contact === true) {
@@ -76,7 +75,7 @@ class Cover0 extends Component {
       )
       document.getElementById("texteContact").className = "notHover"
       document.getElementById("texteDemo").className = "Hover"
-      document.getElementById("demoBox").className = "test4"
+
 
     }
 
@@ -100,7 +99,7 @@ class Cover0 extends Component {
       )
       document.getElementById("texteContact").className = "Hover"
       document.getElementById("texteDemo").className = "notHover"
-      document.getElementById("demoBox").className = "test4 displayNone"
+
     }
 
     if (this.state.demo === false && this.state.apropos === true && this.state.logo === false && this.state.contact === false) {
@@ -162,7 +161,7 @@ class Cover0 extends Component {
 
       document.getElementById("texteApro").className = "Hover"
       document.getElementById("texteDemo").className = "notHover"
-      document.getElementById("demoBox").className = "test4 displayNone"
+
       this.setState({
         playing: false,
       }
@@ -180,7 +179,6 @@ class Cover0 extends Component {
       )
 
       document.getElementById("texteDemo").className = "notHover"
-      document.getElementById("demoBox").className = "test4 displayNone"
       document.getElementById("texteApro").className = "notHover"
       this.setState({
         playing: false,
@@ -220,44 +218,20 @@ class Cover0 extends Component {
 
   }
 
-
-
-
   render() {
 
     return (
-      <div className="box2">
-        <div className="test5">
+      <div className="box">
+        <div className="container">
+       
+       
+          {this.state.logo && <Logo/>}
+         
+          {this.state.apropos && <Apropo/>}
 
-          <div id="demoBox" className="test4 displayNone">
-            <div className="test2">
+          {this.state.contact && <Contact/>}
 
-
-
-
-
-            </div>
-          </div>
-
-          {this.state.logo && <img className="logoLanding" id="logoL" src={logo} alt="logoL" />}
-          {this.state.apropos &&
-
-            <div>
-              <div className="texteApro"  >La Banane est un studio créatif plein services, basé à Bromont, Qc. Nous sommes spécialisés
-                dans les publicités TV et web. Nous offrons un service de consultation qui cible vos besoins afin de proposer
-                une solution éfficace adaptée à vos besoins. Nos experts multidiciplinaires ne reculent devant
-                rien pour livrer la marchandise.Nous offrons un service de consultation qui cible vos besoins afin de proposer
-                une solution éfficace adaptée à vos besoins. Nos experts multidiciplinaires ne reculent devant
-                rien pour livrer la marchandise.
-              </div>
-
-            </div>
-          }
-
-          {this.state.contact && <div>   contact </div>}
-
-          {this.state.demo && <div>  <iframe className="" id="" title="" src="https://player.vimeo.com/video/248658478" width="640" height="360" frameBorder="0" webkitallowfullscreen="true"
-              mozallowfullscreen="true" allowFullScreen></iframe> </div>}
+          {this.state.demo && <Demo/>}
 
 
         </div>
@@ -282,4 +256,6 @@ class Cover0 extends Component {
     )
   }
 }
-export default Cover0;
+
+
+export default App;

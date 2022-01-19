@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: gotBold;
   src: url(Gotham-Medium.otf);
@@ -8,302 +7,7 @@
 @font-face {
   font-family: gotLight;
   src: url(Gotham-Light.otf);
-} 
-/* ////////////////////////// */
-.resize{
-height: 100vh;
-background-color: red;
 }
-
-body{
-  background: black;
-  -webkit-transition: background-color 1s ease-out;
-  -moz-transition: background-color 1s ease-out;
-  -o-transition: background-color 1s ease-out;
-  transition: background-color 1s ease-out;
-}
-.box{
-  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 100);
-
-
-}
-
-.box2{
-  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 100);
-
-
-  }
-
-.black{
-  background: black
-}
-
-.container{
-  display: flex;
-  justify-content: center;
-  background-color: #ffffff;
-}
-
-
-.container2{
-  display: flex;
-  justify-content: center;
-  background-color: #ffffff;
-}
-
-.container3{
-  display: flex;
-  justify-content: center;
-  background-color: #ffffff;
-}
-
-
-.logo{
-  opacity: 1;
-  position: absolute;
-  top: 0;
-  width: 6vw;
-  margin: 2%;
-  -webkit-transition: opacity 0.5s ease-in-out;
-  -moz-transition: opacity 0.5s ease-in-out;
-  -ms-transition: opacity 0.5s ease-in-out;
-  -o-transition: opacity 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.logoOff{
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  width: 6vw;
-  margin: 2%;
-  -webkit-transition: opacity 0.5s ease-in-out;
-  -moz-transition: opacity 0.5s ease-in-out;
-  -ms-transition: opacity 0.5s ease-in-out;
-  -o-transition: opacity 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out;
-}
-
-
-
-.texte2{
-  font-family: gotLight;
-  color: white;
-  position: absolute;
-  margin-top: -8vh;
-}
-
-.vide{
- height:  100vh
-
-}
-
-
-
-
-
-.anim0{
-  width: 33vw;
-  margin-top: 100px;
-  position:absolute;
-  left:0;
-  right:0;
-  margin-left:auto;
-  margin-right:auto;
-}
-
-
-
-/* 
-/////////////////////////////////////////////////////// {} */
-.width100{
-width: 100vw
-}
-
-.grosTexte{
-
-background: rosybrown
-}
-
-.bouton{
-background: red;
-width: 10vw;
-}
-.infoCOntact{
-display: flex;
-justify-content: space-between;
-}
-
-.infoMessage{
-margin-top: 5vh;
-}
-.NameStyle {
-color: rgb(255, 230, 154);
-background: none;
-border-color: rgb(255, 230, 154);
-font-size: 3vh;
-font-family: gotLight;
-width: 39.5vw;
-}
-
-.messageStyle {
-color: rgb(255, 230, 154);
-background: none;
-border-color: rgb(255, 230, 154);
-font-size: 3vh;
-font-family: gotLight;
-width: 80vw;
-height: 20vh;
-}
-
-.formBody{
-width: 70vw;
-font-family: gotLight;
-color: rgb(255, 230, 154);
-font-size: 3vh;
-margin-top: 5vh;
-}
-
-svg:hover {
-fill: red;
-}
-.arrow{
-margin-top: 55vh;
-position: absolute;
- top: 50%;
-
-}
-.bouttton{
-margin-top: 3vh;
-}
-
-  .footer{
-    display: none;
-    position: fixed;
-    bottom: 0%;
-    left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90vw;
-  height: 5vh;
-  color: rgb(255, 230, 154);;
-  display: flex;
-  font-family: gotLight;
-  font-size: 1vw;
-    }
-
-    .jcpColor{
-        color: #DA2129;
-    }
-
-    .footer2{
-
-      position: absolute;
-      bottom: 0%;
-      left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90vw;
-    height: 5vh;
-    display: flex;
-      }
-
-    .client{
-      border-style: solid;
-
-      width: 20vw;
-      cursor: pointer;
-    }
-
-    .client2{
- 
-      width: 20vw;
-      cursor: pointer;
-    }
-
-    
-    .clientON{
-      width: 20vw;
-      cursor: pointer;
-      background: #DA2129;
-    }
-
-    .clientONAG{
-      width: 20vw;
-      cursor: pointer;
-      background: #317731;
-    }
-    .clientONsta{
-      width: 20vw;
-      cursor: pointer;
-      background: orange;
-    }
-    
-    .clientONSDL{
-      width: 20vw;
-      cursor: pointer;
-      background:  rgb(249, 191, 19);
-    }
-    .clientONPneu{
-      width: 20vw;
-      cursor: pointer;
-      background:   #31312E;
-    }
-
-  .compteur{
-   display: flex;
-  justify-content: center;
-  color: rgb(255, 230, 154);
-  font-family: gotLight;  
-  font-size: large;
-}
-
-.compteurMobile{
-  display: flex;
- justify-content: center;
- color: rgb(255, 230, 154);
- font-family: gotLight;  
- font-size: 10px;
-}
-
-#gauche{
-  height: 12vh;
-  transition: all .2s ease-in-out;
- 
-}
-
-#droite{
-  height: 12vh;
-  transition: all .2s ease-in-out;
-}
-
-
-
-#droite:hover{
-  height: 13vh;
-  cursor: pointer;
-  transition:  all .2s ease-in-out;
-}
-
-#gauche:hover{
-  height: 13vh;
-  cursor: pointer;
-  transition: all .2s ease-in-out;
-}
-
-
-
-
-#gaucheMobile{
-  height: 16vh;
-
-}
-
-#droiteMobile{
-  height: 16vh;
-}
-
-
 .player-wrapper {
   position: relative;
   padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
@@ -314,770 +18,177 @@ margin-top: 3vh;
   top: 0;
   left: 0;
 }
-
-.test4{
-width: 60vw;
+.demo-width{
+width: 70vw;
 }
 
 
-.test4Mobile{
-  width: 80vw;
-  margin-top: 28vh;
-  }
-.test5{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 100);
-  }
-
-  .test5Mobile {
-    display: flex;
-    justify-content: center;
-    /* top: 50%; */
-    /* margin-top: 20%; */
-    /* align-items: center; */
-    /* height: 100vh; */
+body {
+  background: black;
 }
 
+.box {
+  height: 100vh;
 
-.test2{
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
-.test22{
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-}
-.test222{
-
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-}
-.test3{
+.texteEmail{
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-.test33{
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background-color: red;
-  cursor: pointer;
-
-}
-
-.test333{
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-}
-.logoLanding{
-  max-width: 50vw;
-  max-height: 50vh;
-  margin-top: -10vh;
-}
-.logoLandingMobile {
-
-  height: 30vh;
-  margin-top: 20vh;
-}
-.texteContact{
-position: absolute;
-top:14vh;
-right: 0;
-margin: 2%;
-
-}
-.texteDemo{
-position: absolute;
-top:7vh;
-right: 0;
-margin: 2%;
-
-}
-.apropos{
-position: absolute;
-top:0;
-right: 0;
-margin: 2%;
-
-}
-
-.clients{
-position: absolute;
-top:88%;
-left: 5%;
-
-
-
-}
-.aproposMobile{
-position: absolute;
-top:0;
-right: 0;
-margin: 2%;
-
-}
-.texteDemoMobile{
-margin-top: 20px;
-}
-.notHover{
-font-family: gotBold;
-color: rgb(255, 230, 154);
-text-align: center;
-font-size: 5vh;
-display: inline-block;
-cursor: pointer;
-}
-
-.notHover2{
-font-family: gotLight;
-color: rgb(255, 230, 154);
-text-align: center;
-font-size: 3vh;
-display: inline-block;
-cursor: pointer;
-}
-
-
-.Hover{
-font-family: gotBold;
-color: rgb(0, 0, 0);
-font-size: 5vh;
-text-align: center;
-display: inline-block;
-cursor: pointer;
-text-shadow:
-rgb(255, 230, 154) 1px 1px,
-rgb(255, 230, 154) -1px 1px,
-rgb(255, 230, 154) -1px -1px,
-rgb(255, 230, 154) 1px -1px;
-}
-
-
-
-
-.notHoverMobile{
-font-family: gotBold;
-color: rgb(255, 230, 154);
-text-align: center;
-font-size: 6vw;
-}
-
-
-
-
-
-
-.HoverMobile{
-font-family: gotBold;
-color: rgb(0, 0, 0);
-font-size: 6vw;
-text-align: center;
-text-shadow:
-rgb(255, 230, 154) 2px 2px,
-rgb(255, 230, 154) -2px 2px,
-rgb(255, 230, 154) -2px -2px,
-rgb(255, 230, 154) 2px -2px;
-
-}
-
-
-
-
-
-
-
-.cover1{
-
-background: red;
-}
-
-.bleueText{
-
-  color: #DA2129;
-}
-.blackText{
-
-color: rgb(0, 0, 0);
-}
-
-.texteApro{
-font-family: gotBold;
-color: rgb(255, 230, 154);
-text-align: justify;
-text-justify: inter-word;
-width: 60vw;
-font-size: 2.5vw;
-transition: all .2s ease-in-out;
-}
-.texteContacting{
-font-family: gotBold;
-color: rgb(255, 230, 154);
-
-
-
-font-size: 5vw;
-}
-
-
-#texteApro:hover{
-font-size: 5.15vh;
-transition: all .2s ease-in-out;
-}
-
-#texteDemo:hover{
-font-size: 5.15vh;
-transition: all .2s ease-in-out;
-
-}
-
-#texteContact:hover{
-font-size: 5.15vh;
-transition: all .2s ease-in-out;
-
-}
-
-
-
-
-
-
-.texteAproMobile{
-font-family: gotBold;
-color: rgb(255, 230, 154);
-text-align: justify;
-width: 80vw;
-text-justify: inter-word;
-font-size: 4.5vw;
-margin-top: 12vh;
-}
-
-
-.textContact{
-margin-top: 5vh;
-}
-
-.fakeHeight{
-height: 60vh;
-}
-
-
-
-
-
-
-
-
-
-
-
-.containerTextVideo{
-display: flex;
-margin-top: 10vh;
-justify-content: space-around;
-width: 80vw;
-
-}
-
-.texte {
-  font-family: gotLight;
-
-  text-align: justify;
-  text-justify: inter-word;
-  width: 28vw;
-  font-size: 2vw;
-  
-}
-.Jcp{
-  color: #DA2129;
-}
-.SDL{
-color: rgb(249, 191, 19);
-}
-
-.Pneu{
-color:  #31312E;
-}
-
-.AGcolor{
-color: #317731;
-}
-
-.stacolor{
-color: orange;
-}
-.titre{
-font-family: gotBold;
-
-width: 28vw;
-font-size: 1.8vw;
-
-}
-
-.boxSize {
-width: 27vw;
-
-}
-
-.largeScreen2 {
-width: 27vw;
-margin-left: -29vw;
-margin-top: 9vh;
-
-}
-
-.largeScreen3 {
-width: 27vw;
-margin-left: -29vw;
-margin-top: 18vh
-}
-
-
-.largeScreen333 {
-width: 27vw;
-
-margin-top: 5vh
-}
-
-
-
-
-.numberContainer{
-display: flex;
-font-family: gotBold;
-font-size: 3.5vh;
-cursor: pointer;
-margin-top: 10vh;
-justify-content: flex-end;
-}
-
-
-.numberContainerMobile{
-display: flex;
-font-family: gotBold;
-font-size: 20vh;
-cursor: pointer;
-
-}
-
-.numb {
-padding-left: 3vw;
-
-}
-
-.numbM {
-padding-right: 3vw;
-font-size: 22vw;
-}
-
-.numbOff {
-padding-left: 3vw;
-color:rgb(255, 255, 255);
-text-shadow:
-rgb(0, 0, 0) 2px 2px,
-rgb(0, 0, 0) -2px 2px,
-rgb(0, 0, 0) -2px -2px,
-rgb(0, 0, 0) 2px -2px;
-}
-
-.numbOffM {
-padding-right: 3vw;
-color:rgb(255, 255, 255);
-text-shadow:
-rgb(0, 0, 0) 2px 2px,
-rgb(0, 0, 0) -2px 2px,
-rgb(0, 0, 0) -2px -2px,
-rgb(0, 0, 0) 2px -2px;
-}
-
-
-
-.centerAll {
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-height: calc(var(--vh, 1vh) * 100);
-}
-
-.centerAllMobile {
-display: flex;
-justify-content: center;
-margin-top: 10vh;
-height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-height: calc(var(--vh, 1vh) * 100);
-}
-
-
-
-.scroll {
-font-family: gotLight;
-
-position: absolute;
-bottom: 0;
-width: 100%;
-margin-bottom: 10vh;
-}
-
-.JcpName{
-font-family:gotBold ;
-font-size: 10vw;
-color: #DA2129;
-text-align: center;
-}
-.SDLName{
-font-family:gotBold ;
-font-size: 9vw;
-color: rgb(249, 191, 19);
-text-align: center;
-}
-
-.PneuName{
-  font-family:gotBold ;
-  font-size: 9vw;
-  color:  #31312E;
-  text-align: center;
-  }
-.AGName{
-font-family:gotBold ;
-font-size: 10vw;
-color: #317731;
-text-align: center;
-}
-
-.staName{
-  font-family:gotBold ;
-  font-size: 10vw;
-  color: orange;
-  text-align: center;
-  }
-
-.lineSplit{
-height:2px;
-border-width:0;
-color:#D83C2D;
-background-color:#D83C2D;
-}
-
-.lineSplit2{
-  height:2px;
-  border-width:0;
-  color: #317731;
-  background-color: #317731;
-  }
-  .lineSplit3{
-    height:2px;
-    border-width:0;
-    color:  rgb(249, 191, 19);
-    background-color: rgb(249, 191, 19);
-    }
-
-    .lineSplit4{
-      height:2px;
-      border-width:0;
-      color:  #31312E;
-      background-color:  #31312E;
-      }
-
-      .lineSplit5{
-        height:2px;
-        border-width:0;
-        color:  orange;
-        background-color:  orange;
-        }
-.imgCover{  
-  width: inherit;
-}
-
-.cercle{
-  width: 2vw;
-}
-.displayNo{
-display: none;
-}
-
-.displayNone{
-display: none;
-}
-
-
-
-
-
-
-
-
-
-.selection {
-display: none;
-position: absolute;
-bottom: 10%;
-right: 10%;
-}
-
-
-
-
-
-
-
-
-
-
-.marginT{
-margin-top: -10vh;
-}
-
-
-.clientName{
-text-align: center;
-margin-top: 1vh;
-}
-
-.noDisplay{
-display: none;
-}
-
-
-.swipe{
-display: none;
-}
-
-
-
-
-
-
-@media only screen and (max-width: 600px) {
-  .JcpName {
-    font-size: 10vw;
-    
-}
-
-.AGName {
-  font-size: 10vw;
-  
-}
-.texteContact {
-  position: absolute;
-  top: 8vh;
-  right: 0;
-  margin: 2%;
-}
-
-.SDLName {
-font-size: 9vw;
-}
-.messageStyle {
-color: rgb(255, 230, 154);
-background: none;
-border-color: rgb(255, 230, 154);
-font-size: 3vh;
-font-family: gotLight;
-width: initial;
-height: 15vh;
-}
-.texteDemo {
-  position: absolute;
-  top: 4vh;
-  right: 0;
-  margin: 2%;
-}
-#texteApro:hover{
-  font-size: 3vh;
-  }
-  
-  #texteDemo:hover{
-    font-size: 3vh;
-    
-  }
-  
-  #texteContact:hover{
-    font-size: 3vh;
-
-  }
-.clients{
-display: none;
-}
-.footer{
-display: none;
-}.footer2{
-display: none;
-}
-
-.test5 {
-display: flex;
-padding-top: 25vh;
-justify-content: center;
-align-items: flex-start;
-height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-height: calc(var(--vh, 1vh) * 100);
-}
-
-
-.swipe{
-display: block;
-text-align: center;
-  color: rgb(255, 230, 154);
-  font-size: 4vw;
-  position: absolute;
-  bottom: 20px;
-  left:0;
-  right: 0;
-  font-family: gotLight;
-}
-.texteContacting {
   font-family: gotBold;
   color: rgb(255, 230, 154);
   font-size: 5vw;
-  position: absolute;
-  bottom: 10vh;
-  right: 20px;
-  text-align: end;
 }
-.infoCOntact {
-  display: table-caption;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
 
 }
+
+.texteDemo {
+  position: absolute;
+  top: 7vh;
+  right: 0;
+  margin: 2%;
+
+}
+
+#texteDemo:hover {
+  font-size: 5.15vh;
+  transition: all .2s ease-in-out;
+
+}
+
+.Hover{
+  font-family: gotBold;
+  color: rgb(0, 0, 0);
+  font-size: 5vh;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  text-shadow:
+  rgb(255, 230, 154) 1px 1px,
+  rgb(255, 230, 154) -1px 1px,
+  rgb(255, 230, 154) -1px -1px,
+  rgb(255, 230, 154) 1px -1px;
+  }
+
 
 .notHover {
-  font-size: 3vh;
-}
-.Hover {
-  font-size: 3vh;
-}
-
-.formBody {
-  width: 70vw;
-  font-family: gotLight;
+  font-family: gotBold;
   color: rgb(255, 230, 154);
-  font-size: 3vh;
-  margin-top: -5vh;
+  text-align: center;
+  font-size: 5vh;
+  display: inline-block;
+  cursor: pointer;
 }
 
+.apropos {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 2%;
 
-.containerTextVideo {
-display: flex;
-flex-direction: column;
-align-items: center;
-margin-top: 4vh;
-justify-content: center;
-width: 90vw;
 }
 
-.texte {
-font-family: gotLight;
-
-text-align: justify;
-text-justify: inter-word;
-width: 95vw;
-font-size: 4vw;
+#texteApro:hover {
+  font-size: 5.15vh;
+  transition: all .2s ease-in-out;
 }
 
-.titre {
-margin-top: 5vh;
-font-family: gotBold;
+.texteContact {
+  position: absolute;
+  top: 14vh;
+  right: 0;
+  margin: 2%;
 
-width: 75vw;
-font-size: 5vw;
 }
 
+#texteContact:hover {
+  font-size: 5.15vh;
+  transition: all .2s ease-in-out;
 
-
-.largeScreen3 {
-width: 55vw;
-margin-left: -35vw;
-margin-top: -7vh;
-}
-
-.largeScreen2 {
-width: 55vw;
-margin-left: 0vw;
-margin-top: -7vh;
-}
-.largeScreen333 {
-width: 90vw;
-
-margin-top: 0vh
-}
-.boxSize {
-margin-left: 35vw;
-width: 55vw;
-}
-.centerAll {
-display: block;
-justify-content: center;
-align-items: center;
-height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-height: calc(var(--vh, 1vh) * 100);
-}
-.numberContainer {
-display: flex;
-font-family: gotBold;
-font-size: 3.5vh;
-cursor: pointer;
-margin-top: 2vh; 
-justify-content: flex-end;
-}
-
-.logoLanding {
-max-width: 85vw;
-max-height: 60vh;
-margin-top: 0vh;
 }
 
 .texteApro {
-font-family: gotBold;
-color: rgb(255, 230, 154);
-text-align: justify;
-text-justify: inter-word;
-width: 80vw;
-font-size: 4vw;
-transition: all .2s ease-in-out;
-}
-.test4 {
-width: 87vw;
-}
-.selection{
-
-position: absolute;
-bottom: 10%;
-right: 4%;
+  font-family: gotBold;
+  color: rgb(255, 230, 154);
+  text-align: justify;
+  text-justify: inter-word;
+  width: 60vw;
+  font-size: 2.5vw;
+  transition: all .2s ease-in-out;
 }
 
-.selection {
-position: absolute;
-bottom: 5px;
-right: 4%;
-}
-.cercle {
-width: 5vw;
-}
-.marginT {
-margin-top: 0vh;
-}
+.texteApro {
+  font-family: gotBold;
+  color: rgb(255, 230, 154);
+  text-align: justify;
+  text-justify: inter-word;
+  width: 60vw;
+  font-size: 2.5vw;
+  transition: all .2s ease-in-out;
 }
 
+.logoLanding {
+  max-width: 85vw;
+  max-height: 60vh;
+  margin-top: 0vh;
+
+}
+
+@media only screen and (max-width: 600px) {
+
+
+  .texteDemo {
+    position: absolute;
+    top: 4vh;
+    right: 0;
+    margin: 2%;
+  }
+
+  #texteDemo:hover {
+    font-size: 3vh;
+
+  }
+
+  .notHover {
+    font-size: 3vh;
+  }
+  .Hover {
+    font-size: 3vh;
+  }
+  #texteApro:hover {
+    font-size: 3vh;
+  }
+
+  .texteContact {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    margin: 2%;
+
+  }
+
+  #texteContact:hover {
+    font-size: 3vh;
+
+  }
+
+  .texteApro {
+    font-family: gotBold;
+    color: rgb(255, 230, 154);
+    text-align: justify;
+    text-justify: inter-word;
+    width: 80vw;
+    font-size: 4vw;
+    transition: all .2s ease-in-out;
+  }
+
+  .logoLanding {
+    max-width: 85vw;
+    max-height: 60vh;
+    margin-top: 0vh;
+  }
+}
