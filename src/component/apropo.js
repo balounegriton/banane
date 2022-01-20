@@ -18,9 +18,7 @@ class Apropo extends Component {
    
       <div className="texteApro"  >La Banane est un studio créatif plein services, basé à Bromont, Qc. Nous sommes spécialisés
         dans les publicités TV et web. Nous offrons un service de consultation qui cible vos besoins afin de proposer
-        une solution éfficace adaptée à vos besoins. Nos experts multidiciplinaires ne reculent devant
-        rien pour livrer la marchandise. Nous offrons un service de consultation qui cible vos besoins afin de proposer
-        une solution éfficace adaptée à vos besoins. 
+        une solution éfficace adaptée à vos besoins.
       </div>
 
     )
