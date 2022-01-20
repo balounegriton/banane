@@ -3,12 +3,12 @@
     "main.css": "/static/css/main.9c5405a5.chunk.css",
     "main.js": "/static/js/main.3d39e492.chunk.js",
     "main.js.map": "/static/js/main.3d39e492.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.9a46d8db.js",
-    "runtime-main.js.map": "/static/js/runtime-main.9a46d8db.js.map",
+    "runtime-main.js": "/static/js/runtime-main.2729bada.js",
+    "runtime-main.js.map": "/static/js/runtime-main.2729bada.js.map",
     "static/js/2.768ce59e.chunk.js": "/static/js/2.768ce59e.chunk.js",
     "static/js/2.768ce59e.chunk.js.map": "/static/js/2.768ce59e.chunk.js.map",
-    "static/js/3.607241c3.chunk.js": "/static/js/3.607241c3.chunk.js",
-    "static/js/3.607241c3.chunk.js.map": "/static/js/3.607241c3.chunk.js.map",
+    "static/js/3.9677fac1.chunk.js": "/static/js/3.9677fac1.chunk.js",
+    "static/js/3.9677fac1.chunk.js.map": "/static/js/3.9677fac1.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.9c5405a5.chunk.css.map": "/static/css/main.9c5405a5.chunk.css.map",
     "static/js/2.768ce59e.chunk.js.LICENSE.txt": "/static/js/2.768ce59e.chunk.js.LICENSE.txt",
@@ -16,7 +16,7 @@
     "static/media/logoBanane.a6547ebf.png": "/static/media/logoBanane.a6547ebf.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.9a46d8db.js",
+    "static/js/runtime-main.2729bada.js",
     "static/js/2.768ce59e.chunk.js",
     "static/css/main.9c5405a5.chunk.css",
     "static/js/main.3d39e492.chunk.js"
