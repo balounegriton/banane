@@ -20,7 +20,7 @@ class Demo extends Component {
         <div className='player-wrapper'>
           <ReactPlayer
             className='react-player'
-            url='https://vimeo.com/648803442'
+            url='https://vimeo.com/668244502'
             width='100%'
             height='100%'
             controls
