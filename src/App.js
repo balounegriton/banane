@@ -19,8 +19,6 @@ class App extends Component {
   }
 
   demoReel = () => {
-
-
     if (this.state.demo === true && this.state.apropos === false && this.state.logo === false && this.state.contact === false) {
       this.setState({
         demo: false,
@@ -33,9 +31,7 @@ class App extends Component {
         playing: false,
       }
       )
-
       document.getElementById("texteDemo").className = "notHover"
-
     }
 
     if (this.state.demo === false && this.state.apropos === true && this.state.logo === false && this.state.contact === false) {
