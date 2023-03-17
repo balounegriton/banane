@@ -1,24 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.9c5405a5.chunk.css",
-    "main.js": "/static/js/main.00e6e42c.chunk.js",
-    "main.js.map": "/static/js/main.00e6e42c.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.2729bada.js",
-    "runtime-main.js.map": "/static/js/runtime-main.2729bada.js.map",
-    "static/js/2.768ce59e.chunk.js": "/static/js/2.768ce59e.chunk.js",
-    "static/js/2.768ce59e.chunk.js.map": "/static/js/2.768ce59e.chunk.js.map",
-    "static/js/3.9677fac1.chunk.js": "/static/js/3.9677fac1.chunk.js",
-    "static/js/3.9677fac1.chunk.js.map": "/static/js/3.9677fac1.chunk.js.map",
+    "main.css": "/static/css/main.f8a30ab9.css",
+    "main.js": "/static/js/main.ba0ddf61.js",
+    "static/js/787.edd59a96.chunk.js": "/static/js/787.edd59a96.chunk.js",
+    "static/media/Gotham-Medium.otf": "/static/media/Gotham-Medium.9a80f9998c1f106a534b.otf",
+    "static/media/Gotham-Light.otf": "/static/media/Gotham-Light.3043d3ce64d7198ffbcd.otf",
+    "static/media/logoBanane.png": "/static/media/logoBanane.a6547ebf200065dd62c1.png",
     "index.html": "/index.html",
-    "static/css/main.9c5405a5.chunk.css.map": "/static/css/main.9c5405a5.chunk.css.map",
-    "static/js/2.768ce59e.chunk.js.LICENSE.txt": "/static/js/2.768ce59e.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/static/media/Gotham-Medium.9a80f999.otf",
-    "static/media/logoBanane.a6547ebf.png": "/static/media/logoBanane.a6547ebf.png"
+    "main.f8a30ab9.css.map": "/static/css/main.f8a30ab9.css.map",
+    "main.ba0ddf61.js.map": "/static/js/main.ba0ddf61.js.map",
+    "787.edd59a96.chunk.js.map": "/static/js/787.edd59a96.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.2729bada.js",
-    "static/js/2.768ce59e.chunk.js",
-    "static/css/main.9c5405a5.chunk.css",
-    "static/js/main.00e6e42c.chunk.js"
+    "static/css/main.f8a30ab9.css",
+    "static/js/main.ba0ddf61.js"
   ]
 }
