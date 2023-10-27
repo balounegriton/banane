@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.76909967.css",
-    "main.js": "/static/js/main.ecab1ebb.js",
+    "main.css": "/static/css/main.6bf5b11e.css",
+    "main.js": "/static/js/main.506a2a9a.js",
     "static/js/787.edd59a96.chunk.js": "/static/js/787.edd59a96.chunk.js",
-    "static/media/your-video.mp4": "/static/media/your-video.aa3c469d4fe2e74677a1.mp4",
+    "static/media/your-video.mp4": "/static/media/your-video.f45e3deeb41c06979dd1.mp4",
     "static/media/tournage.jpg": "/static/media/tournage.b069873a18b3e19eac31.jpg",
     "static/media/Gotham-Ultra.otf": "/static/media/Gotham-Ultra.4be8f35d796aaf649a2e.otf",
     "static/media/cyclope.jpg": "/static/media/cyclope.f5bc624a63569e0cf044.jpg",
@@ -14,12 +14,12 @@
     "static/media/logoBanane.png": "/static/media/logoBanane.a6547ebf200065dd62c1.png",
     "static/media/Gotham-Bold.otf": "/static/media/Gotham-Bold.f9a5c9247af2c80333f4.otf",
     "index.html": "/index.html",
-    "main.76909967.css.map": "/static/css/main.76909967.css.map",
-    "main.ecab1ebb.js.map": "/static/js/main.ecab1ebb.js.map",
+    "main.6bf5b11e.css.map": "/static/css/main.6bf5b11e.css.map",
+    "main.506a2a9a.js.map": "/static/js/main.506a2a9a.js.map",
     "787.edd59a96.chunk.js.map": "/static/js/787.edd59a96.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.76909967.css",
-    "static/js/main.ecab1ebb.js"
+    "static/css/main.6bf5b11e.css",
+    "static/js/main.506a2a9a.js"
   ]
 }
