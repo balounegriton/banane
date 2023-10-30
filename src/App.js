@@ -18,7 +18,7 @@ class App extends Component {
     };
   }
 
-  demoReel = () => {
+  service = () => {
     if (this.state.demo === true && this.state.apropos === false && this.state.logo === false && this.state.contact === false) {
       this.setState({
         demo: false,
@@ -31,7 +31,7 @@ class App extends Component {
         playing: false,
       }
       )
-      document.getElementById("texteDemo").className = "notHover"
+      document.getElementById("texteService").className = "notHover"
     }
 
     if (this.state.demo === false && this.state.apropos === true && this.state.logo === false && this.state.contact === false) {
@@ -43,7 +43,7 @@ class App extends Component {
       }
       )
 
-      document.getElementById("texteDemo").className = "Hover"
+      document.getElementById("texteService").className = "Hover"
       document.getElementById("texteApro").className = "notHover"
 
     }
@@ -56,7 +56,7 @@ class App extends Component {
       }
       )
 
-      document.getElementById("texteDemo").className = "Hover"
+      document.getElementById("texteService").className = "Hover"
 
 
     }
@@ -70,7 +70,7 @@ class App extends Component {
       }
       )
       document.getElementById("texteContact").className = "notHover"
-      document.getElementById("texteDemo").className = "Hover"
+      document.getElementById("texteService").className = "Hover"
 
 
     }
@@ -94,7 +94,7 @@ class App extends Component {
       }
       )
       document.getElementById("texteContact").className = "Hover"
-      document.getElementById("texteDemo").className = "notHover"
+      document.getElementById("texteService").className = "notHover"
 
     }
 
@@ -156,7 +156,7 @@ class App extends Component {
       )
 
       document.getElementById("texteApro").className = "Hover"
-      document.getElementById("texteDemo").className = "notHover"
+      document.getElementById("texteService").className = "notHover"
 
       this.setState({
         playing: false,
@@ -174,7 +174,7 @@ class App extends Component {
       }
       )
 
-      document.getElementById("texteDemo").className = "notHover"
+      document.getElementById("texteService").className = "notHover"
       document.getElementById("texteApro").className = "notHover"
       this.setState({
         playing: false,
@@ -232,17 +232,17 @@ class App extends Component {
 
         </div>
 
-        <div className="texteDemo">
-          <div id="texteDemo" className="notHover" onClick={this.demoReel} >demo reel  </div>
+        <div className="texteService">
+          <div id="texteService" className="notHover" onClick={this.service} >SERVICES  </div>
         </div>
 
 
         <div className="apropos">
-          <div id="texteApro" className="notHover" onClick={this.apropo}>à propos  </div>
+          <div id="texteApro" className="notHover" onClick={this.apropo}>À PROPOS  </div>
 
         </div>
         <div className="texteContact">
-          <div id="texteContact" className="notHover" onClick={this.contact} > contact </div>
+          <div id="texteContact" className="notHover" onClick={this.contact} > CONTACT </div>
         </div>
 
 

@@ -1,5 +1,15 @@
 @font-face {
+  font-family: gotUltra;
+  src: url(Gotham-Ultra.otf);
+}
+
+@font-face {
   font-family: gotBold;
+  src: url(Gotham-Bold.otf);
+}
+
+@font-face {
+  font-family: gotMed;
   src: url(Gotham-Medium.otf);
 }
 
@@ -8,27 +18,143 @@
   font-family: gotLight;
   src: url(Gotham-Light.otf);
 }
+.emptyDiv{
+  height: 10vh;
+}
+.texteInverse{
+  text-align: end;
+  width: 37vw;
+}
+.sousService{
+  color: #FFDF66;
+  font-family: gotBold;
+  padding: 0;
+  font-size: 2vw;
+  margin-left: 2vw;
+  margin-top: 2vw;
+}
+.sousService2{
+  color: #FFDF66;
+  font-family: gotLight;
+  padding: 0;
+  font-size: 2vw;
+  margin-left: 2vw;
+  margin-top: 0.5vw;
+  width: 35vw;
+}
+.sousService3{
+  color: #FFDF66;
+  font-family: gotLight;
+  padding: 0;
+  font-size: 2vw;
+  margin-left: 2vw;
+  margin-top: 0.5vw;
+
+}
+
+.TitreService{
+  color: #FFDF66;
+  font-family: gotUltra;
+  margin-top: 7vw;
+  font-size: 6vw;
+  margin-left: 2vw;
+  padding: 0;
+}
+
+.TitreService2{
+  color: #FFDF66;
+  font-family: gotUltra;
+  margin-top: 7vw;
+  font-size: 5vw;
+  margin-left: 2vw;
+  padding: 0;
+}
 .player-wrapper {
   position: relative;
   padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
 }
+.photoPortrait{
+  width: 20vw;
+  margin-left: 5vw;
+  margin-top: 8vw;
+}
 
+.photoService {
+  width: 35vw;
+  margin-left: 5vw;
+  margin-top: 8vw;
+}
 .react-player {
   position: absolute;
   top: 0;
   left: 0;
 }
+
+.popUp{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.653);
+  backdrop-filter: blur(10px);
+}
 .demo-width{
 width: 70vw;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: black;
+
+}
+/* Styles for the video element */
+#video-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+/* Styles for the video container */
+.video-background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  filter: blur(1px)contrast(1.1);
+  opacity: 60%;
+
+
 }
 
 
+.image-with-text {
+  display: flex;
+
+}
+
+
+
+p {
+  font-size: 16px;
+}
+
+
+.about{
+  height: 100dvh;
+  width: 100dvw;
+}
 body {
-  background: blue;
+  background: black;
 }
 
 .box {
-  height: 100vh;
+  height: 100dvh;
 
 }
 .texteEmail{
@@ -36,26 +162,33 @@ body {
   font-family: gotBold;
   color: #FFDF66;
   font-size: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.facebook{
+  width: 5vw;
+  cursor: pointer;
 }
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
-
-
 }
 
-.texteDemo {
-  position: absolute;
-  top: 7vh;
+
+
+.texteService {
+  position: fixed;
+  top: 4vw;
   right: 0;
   margin: 2%;
 
 }
 
-#texteDemo:hover {
-  font-size: 5.15vh;
+#texteService:hover {
+  font-size: 3.5vw;
   transition: all .2s ease-in-out;
 
 }
@@ -63,7 +196,7 @@ body {
 .Hover{
   font-family: gotBold;
   color: rgb(0, 0, 0);
-  font-size: 5vh;
+  font-size: 3.4vw;
   text-align: center;
   display: inline-block;
   cursor: pointer;
@@ -79,13 +212,21 @@ body {
   font-family: gotBold;
   color: #FFDF66;
   text-align: center;
-  font-size: 5vh;
+  font-size: 3.4vw;
   display: inline-block;
   cursor: pointer;
 }
 
+.notHoverDemo {
+  font-family: gotBold;
+  color: #FFDF66;
+  text-align: center;
+  font-size: 3vw;
+  display: inline-block;
+  cursor: pointer;
+}
 .apropos {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   margin: 2%;
@@ -93,20 +234,20 @@ body {
 }
 
 #texteApro:hover {
-  font-size: 5.15vh;
+  font-size: 3.5vw;
   transition: all .2s ease-in-out;
 }
 
 .texteContact {
-  position: absolute;
-  top: 14vh;
+  position: fixed;
+  top: 8vw;
   right: 0;
   margin: 2%;
 
 }
 
 #texteContact:hover {
-  font-size: 5.15vh;
+  font-size: 3.5vw;
   transition: all .2s ease-in-out;
 
 }
@@ -116,44 +257,110 @@ body {
   color: #FFDF66;
   text-align: justify;
   text-justify: inter-word;
-  width: 60vw;
-  font-size: 2.5vw;
+  width: 70vw;
+  font-size: 3vw;
   transition: all .2s ease-in-out;
+  margin-top: 6vh;
+  margin-left: 5vw;
 }
 
-.texteApro {
-  font-family: gotBold;
+.texteApro1 {
+  font-family: gotUltra;
   color: #FFDF66;
   text-align: justify;
   text-justify: inter-word;
-  width: 60vw;
-  font-size: 2.5vw;
+  width: 70vw;
+  font-size: 5vw;
   transition: all .2s ease-in-out;
+  margin-top: 5vh;
+  margin-left: 5vw;
 }
 
 .logoLanding {
-  max-width: 85vw;
-  max-height: 60vh;
+  max-width: 40vw;
+  max-height: 40vh;
   margin-top: 0vh;
 
 }
+.texteDemo{
+  position: absolute;
+bottom: 1vh;
+left: 49%;
+transform: translate(-50%, -50%);
+color: #FFDF66;
+}
+.button {
+  background-color:#FFDF66; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: transparent; 
+color: #FFDF66;
+font-family: gotBold;
+  border: 2px solid #FFDF66;
+}
+
+.button1:hover {
+  background-color: #FFDF66;
+  color: black
+}
 
 @media only screen and (max-width: 600px) {
+  .texteInverse {
+
+    width: 45vw;
+}
+
+.TitreService2 {
+  font-size: 6vw;
+}
+  .photoService {
+    width: 45vw;
+    
+}
+.mobileFit{
+  margin-top: 15vh;
+}
+  .texteApro1 {
+    margin-top: 20vh;
+    font-size: 9vw;
+    width: 90vw;
+  }
+  .photoPortrait{
+    width: 26vw;
+   
+  }
+  .texteDemo{
+color: #FFDF66;
+  }
 
 
-  .texteDemo {
-    position: absolute;
+  .texteService{
+    position: fixed;
     top: 4vh;
     right: 0;
     margin: 2%;
   }
 
-  #texteDemo:hover {
+  #texteService:hover {
     font-size: 3vh;
 
   }
 
   .notHover {
+    font-size: 3vh;
+  }
+  .notHoverDemo {
     font-size: 3vh;
   }
   .Hover {
@@ -164,7 +371,7 @@ body {
   }
 
   .texteContact {
-    position: absolute;
+    position: fixed;
     top: 8vh;
     right: 0;
     margin: 2%;
@@ -181,14 +388,14 @@ body {
     color: #FFDF66;
     text-align: justify;
     text-justify: inter-word;
-    width: 80vw;
-    font-size: 4vw;
+    width: 90vw;
+    font-size: 5vw;
     transition: all .2s ease-in-out;
   }
 
   .logoLanding {
-    max-width: 85vw;
-    max-height: 60vh;
+    max-width: 55vw;
+    max-height: 55vh;
     margin-top: 0vh;
   }
 }
