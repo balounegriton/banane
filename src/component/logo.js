@@ -38,7 +38,7 @@ popOff = () => {
       <div>
         <div className="">
 
-          <img className="logoLanding" id="logoL" src={logo} alt="logoL" />
+ 
 
 
         </div>
