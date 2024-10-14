@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../App.css';
-import logo from "../image/logoBanane.png";
 import VideoBackground from './VideoBackground.js';
 import PopUp from './Popup.js';
 
