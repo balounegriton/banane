@@ -238,11 +238,15 @@ body {
   transition: all .2s ease-in-out;
 }
 
+.hauteur{
+z-index: 10;
+} 
 .texteContact {
   position: fixed;
   top: 8vw;
   right: 0;
   margin: 2%;
+
 
 }
 
@@ -288,6 +292,9 @@ bottom: 1vh;
 left: 49%;
 transform: translate(-50%, -50%);
 color: #FFDF66;
+z-index: 11;
+position: fixed;
+
 }
 .button {
   background-color:#FFDF66; /* Green */
@@ -308,6 +315,7 @@ color: #FFDF66;
 color: #FFDF66;
 font-family: gotBold;
   border: 2px solid #FFDF66;
+  z-index: 10;
 }
 
 .button1:hover {

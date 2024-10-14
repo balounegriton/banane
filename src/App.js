@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
 
-
+import PopUp from './component/Popup.js';
 import Logo from "./component/logo.js";
 import Demo from "./component/demo.js";
 import Contact from './component/contact';
 import Apropo from './component/apropo';
-
+import Imagine from './index.jsx';
 class App extends Component {
   constructor() {
     super();
@@ -14,7 +14,8 @@ class App extends Component {
       demo: false,
       apropos: false,
       logo: true,
-      contact: false
+      contact: false,
+      popUp:false,
     };
   }
 
@@ -77,6 +78,26 @@ class App extends Component {
 
 
   }
+
+  popDemo = () => {
+    
+    this.setState({
+    popUp:true,
+    }
+    ) 
+
+   
+
+}
+
+popOff = () => {
+  
+this.setState({
+popUp:false,
+}
+) 
+
+}
 
   contact = () => {
 
@@ -217,34 +238,42 @@ class App extends Component {
   render() {
 
     return (
-      <div className="box">
-        <div className="container">
-       
-       
-          {this.state.logo && <Logo/>}
-         
-          {this.state.apropos && <Apropo/>}
+      <div>
 
-          {this.state.contact && <Contact/>}
-
-          {this.state.demo && <Demo/>}
-
-
-        </div>
-
-        <div className="texteService">
+        <div className="texteService hauteur">
           <div id="texteService" className="notHover" onClick={this.service} >SERVICES  </div>
         </div>
 
-
-        <div className="apropos">
+        <div className="apropos hauteur">
           <div id="texteApro" className="notHover" onClick={this.apropo}>À PROPOS  </div>
-
         </div>
-        <div className="texteContact">
+
+        <div className="texteContact hauteur">
           <div id="texteContact" className="notHover" onClick={this.contact} > CONTACT </div>
         </div>
 
+        {this.state.logo &&   
+              <div>
+        {!this.state.popUp &&  <div className="texteDemo">
+        <div id="texteDemo" className="notHoverDemo" >
+          <button className="button button1" onClick={this.popDemo}>PLAY DEMO</button>
+        </div>
+      </div>}
+      {this.state.popUp &&  <div onClick={this.popOff}> <PopUp  />   </div>}
+        
+        <Imagine /></div>  }
+    
+      
+       
+
+       {this.state.apropos &&  <div className="box">
+      <div className="container"> <Apropo/></div>  </div>}
+
+         {this.state.contact &&   <div className="box">
+          <div className="container"> <Contact/> </div>  </div>}
+
+       {this.state.demo && <div className="box">
+        <div className="container"> <Demo/></div>  </div> }
 
 
       </div>

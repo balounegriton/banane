@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../App.css';
-import VideoBackground from './VideoBackground.js';
 import PopUp from './Popup.js';
 
 class Logo extends Component {
@@ -48,7 +47,6 @@ popOff = () => {
         </div>
         {this.state.popUp &&  <div onClick={this.popOff}> <PopUp  />   </div>}
 
-        <VideoBackground />
 
       </div>
     )
