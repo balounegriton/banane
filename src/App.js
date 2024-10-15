@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 import PopUp from './component/Popup.js';
-import Logo from "./component/logo.js";
+import logo from "./image/logoBanane.png";
 import Demo from "./component/demo.js";
 import Contact from './component/contact';
 import Apropo from './component/apropo';
@@ -260,7 +260,12 @@ popUp:false,
         </div>
       </div>}
       {this.state.popUp &&  <div onClick={this.popOff}> <PopUp  />   </div>}
-        
+      <div className="logoCenter">
+
+<img className="logoLanding" id="logoL" src={logo} alt="logoL" />
+
+
+</div>
         <Imagine /></div>  }
     
       

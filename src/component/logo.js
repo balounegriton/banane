@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
 import PopUp from './Popup.js';
+import logo from "../image/logoBanane.png";
 
 class Logo extends Component {
   constructor() {
@@ -36,7 +37,7 @@ popOff = () => {
       <div>
         <div className="">
 
- 
+        <img className="logoLanding" id="logoL" src={logo} alt="logoL" />
 
 
         </div>
